@@ -175,7 +175,7 @@ st.markdown(f"""
 # --- SIDEBAR: INTEGRATION & SYNC ---
 with st.sidebar:
     st.markdown("### 🔌 Institutional Bridge")
-    if st.button("🔄 Force Live EHR Sync (Epic)", use_container_width=True):
+    if st.button("🔄 Force Live EHR Sync (Epic)", width="stretch"):
         st.toast("Syncing Patient Notes, Labs, & Meds from EHR...", icon="📥")
     
     st.divider()
@@ -247,7 +247,7 @@ if st.session_state.prediction_result:
              contribs = pd.DataFrame(res['feature_contributions'])
              fig = px.bar(contribs, x='weight', y='name', orientation='h', color='weight', height=250)
              fig.update_layout(margin=dict(l=0,r=0,t=0,b=0), paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", template="plotly_dark")
-             st.plotly_chart(fig, use_container_width=True)
+             st.plotly_chart(fig, width="stretch")
 
     with tabs[1]: # PATHWAYS
         # ... pathways content (remains similar) ...
@@ -280,7 +280,7 @@ if st.session_state.prediction_result:
                 (trials_df['site'] == 'universal')
             ]
         
-        st.dataframe(t_filtered, use_container_width=True, hide_index=True)
+        st.dataframe(t_filtered, width="stretch", hide_index=True)
 
     with tabs[2]: # MOLECULAR WORKBENCH
         st.markdown("### 🧬 Molecular Workbench: Genomic Signature Depth")
@@ -295,7 +295,7 @@ if st.session_state.prediction_result:
                      var_data.append({"Gene": v, "Alteration": "L858R" if v=="EGFR" else "V600E", "Type": "SNP", "VAF": "18.4%", "Depth": "1200x", "Actionability": "Level 1A"})
             
             if var_data:
-                st.dataframe(pd.DataFrame(var_data), use_container_width=True, hide_index=True)
+                st.dataframe(pd.DataFrame(var_data), width="stretch", hide_index=True)
             else:
                 st.info("No primary driver mutations detected in this NGS panel.")
 
@@ -309,7 +309,7 @@ if st.session_state.prediction_result:
             st.markdown("#### Mutational Signature Weight")
             fig_sig = px.bar(x=[45, 30, 25], y=["Sig 1", "Sig 4", "Other"], orientation='h', height=250)
             fig_sig.update_layout(margin=dict(l=0,r=0,t=0,b=0), paper_bgcolor="rgba(0,0,0,0)", template="plotly_dark")
-            st.plotly_chart(fig_sig, use_container_width=True)
+            st.plotly_chart(fig_sig, width="stretch")
 
     with tabs[3]: # MTB PACKET
         st.markdown("### 📋 Molecular Tumor Board (MTB) Readiness")
@@ -363,7 +363,7 @@ if st.session_state.prediction_result:
             fig_rwe.add_trace(go.Scatter(x=pfs['months'], y=pfs['prob'], mode='lines+markers', name='AI ADHERED (n=742)', line=dict(color="#10b981", width=4, shape='hv')))
             fig_rwe.add_trace(go.Scatter(x=pfs['months'], y=[1.0, 0.70, 0.45, 0.25, 0.05], mode='lines', name='MANUAL OVERRIDE (n=108)', line=dict(color="#ef4444", dash='dash', shape='hv')))
             fig_rwe.update_layout(xaxis_title="Months from MTB", yaxis_title="Survival Probability", height=350, template="plotly_dark", legend=dict(yanchor="bottom", y=0.01, xanchor="left", x=0.01))
-            st.plotly_chart(fig_rwe, use_container_width=True)
+            st.plotly_chart(fig_rwe, width="stretch")
 
         with r_col2:
             st.markdown("#### Evidence Persistence Ledger")
@@ -372,7 +372,7 @@ if st.session_state.prediction_result:
             filtered_recs = pd.DataFrame(records)
             if site_filter != "All Sites":
                 filtered_recs = filtered_recs[filtered_recs['cancer_type'] == site_filter]
-            st.dataframe(filtered_recs.head(10), use_container_width=True, hide_index=True)
+            st.dataframe(filtered_recs.head(10), width="stretch", hide_index=True)
 
     with tabs[5]: # VALIDATION GATEWAY
         st.markdown("### 🧪 Validation & Clinical Pilot Control")
@@ -404,7 +404,7 @@ if st.session_state.prediction_result:
             st.caption("Continuous background monitoring of clinical accuracy.")
             shadow_entries = st.session_state.inst_db._load_json(os.path.join(st.session_state.inst_db.data_dir, "shadow_log.json"))
             if shadow_entries:
-                st.dataframe(pd.DataFrame(shadow_entries).tail(5), use_container_width=True)
+                st.dataframe(pd.DataFrame(shadow_entries).tail(5), width="stretch")
             else:
                 st.info("No active shadow logs found in this session.")
 
