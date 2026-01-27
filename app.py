@@ -57,7 +57,6 @@ st.markdown(f"""
     html, body, [class*="css"] {{ font-family: 'Inter', sans-serif; }}
     .stApp {{ background: {bg_color}; }}
     h1, h2, h3, h4 {{ font-family: 'Outfit', sans-serif !important; color: {text_primary} !important; }}
-    p, span, label, div {{ color: {text_primary} !important; }}
     
     /* Sidebar Worklist Styling */
     [data-testid="stSidebar"] {{ 
@@ -221,10 +220,11 @@ with st.sidebar:
 #     pass 
 
 # --- MAIN DASHBOARD ---
-tabs = st.tabs(["🎯 SNAPSHOT", "💊 PATHWAYS", "🧬 MOLECULAR WORKBENCH", "📽️ MTB PACKET", "📈 INSTITUTIONAL RWE", "🧪 VALIDATION"])
-
 if st.session_state.prediction_result:
     res = st.session_state.prediction_result
+    v_mode_active = st.session_state.get('validation_mode', 'Production Pilot')
+    
+    tabs = st.tabs(["🎯 SNAPSHOT", "💊 PATHWAYS", "🧬 MOLECULAR WORKBENCH", "📽️ MTB PACKET", "📈 INSTITUTIONAL RWE", "🧪 VALIDATION"])
     
     with tabs[0]: # SNAPSHOT
         # ... snapshot content (remains similar) ...
@@ -409,7 +409,16 @@ if st.session_state.prediction_result:
                 st.info("No active shadow logs found in this session.")
 
 else:
-    st.markdown('<div style="text-align: center; padding: 150px 0; opacity: 0.2;"><svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><h2>System Idle: Waiting for Case Intake</h2></div>', unsafe_allow_html=True)
+    # Explicit Landing Page / System Idle
+    st.markdown(f"""
+    <div style="text-align: center; padding: 120px 0; opacity: 0.8;">
+        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="{accent_color}" stroke-width="1.5" style="margin-bottom: 20px;">
+            <circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
+        </svg>
+        <h2 style="color: {text_primary} !important;">Enterprise Command Center</h2>
+        <p style="color: {text_secondary} !important; font-size: 1.1rem;">Awaiting Case Intake from MSK-Connect Queue...<br>Select a patient from the sidebar to begin clinical analysis.</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 # --- PORTFOLIO FOOTER ---
 st.markdown("""
