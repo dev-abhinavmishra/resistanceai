@@ -13,6 +13,7 @@ sys.path.append(str(Path(__file__).parent))
 from backend.predictor import ResistancePredictor
 from backend.data_ingestion import ClinicalDataIngestor, CaseQueueManager
 from backend.institutional_db import InstitutionalDB
+from backend.trial_engine import ClinicalTrialEngine
 
 # --- PERFORMANCE OPTIMIZATION: GLOBAL RESOURCE CACHING ---
 @st.cache_resource
@@ -21,7 +22,8 @@ def load_clinical_resources():
     predictor = ResistancePredictor(model_dir="backend/artifacts")
     inst_db = InstitutionalDB()
     inst_db.seed_validation_data() # Mass-seed only once globally
-    return predictor, inst_db
+    trial_engine = ClinicalTrialEngine()
+    return predictor, inst_db, trial_engine
 
 @st.cache_resource
 def get_institutional_queue():
@@ -37,7 +39,7 @@ st.set_page_config(
 )
 
 # Init Global Core
-core_predictor, core_db = load_clinical_resources()
+core_predictor, core_db, core_trials = load_clinical_resources()
 
 if 'history' not in st.session_state:
     st.session_state.history = []
@@ -309,25 +311,41 @@ if st.session_state.prediction_result:
             
         st.divider()
         st.markdown("### 🧬 Trial Discovery Engine")
-        st.caption("Automated mapping to ClinicalTrials.gov and Sponsor Feeds.")
+        st.caption("Live integration with ClinicalTrials.gov (v2 API). Results are filtered by current patient biomarkers.")
         
-        # Load All Trials
-        with open("backend/knowledge_base/trials.json", 'r') as f:
-            all_trials = json.load(f)['trials']
+        # Site and Biomarkers
+        current_site = st.session_state.form_data['cancer_type']
+        current_variants = st.session_state.form_data.get('detected_variants', [])
         
-        trials_df = pd.DataFrame(all_trials)
-        t_search = st.text_input("🔍 Search Trials Catalog", placeholder="Search by Phase, Site, or Status").lower()
+        # UI for Real-time Search
+        t_col1, t_col2 = st.columns([3, 1])
+        with t_col1:
+            custom_biomarker = st.text_input("🧬 Filter by Additional Biomarker", placeholder="e.g. BRAF V600E, MSI-H", help="Refine search with specific mutations.")
+        with t_col2:
+            limit_results = st.number_input("Limit", 10, 100, 50)
+
+        # Trigger fetch
+        search_terms = current_variants + ([custom_biomarker] if custom_biomarker else [])
         
-        if t_search:
-            t_filtered = trials_df[trials_df.apply(lambda row: t_search in row.to_string().lower(), axis=1)]
-        else:
-            # Smart default: show matches for current site/biomarkers
-            t_filtered = trials_df[
-                (trials_df['site'] == st.session_state.form_data['cancer_type']) |
-                (trials_df['site'] == 'universal')
-            ]
-        
-        st.dataframe(t_filtered, width="stretch", hide_index=True)
+        try:
+            with st.spinner("Quarrying Live Trial Database..."):
+                engine_results = core_trials.fetch_trials(current_site, search_terms, limit=limit_results)
+            
+            if engine_results:
+                st.write(f"Showing **{len(engine_results)}** relevant clinical trials.")
+                st.dataframe(pd.DataFrame(engine_results), width="stretch", hide_index=True)
+            else:
+                st.warning("No recruiting trials found with these specific biomarkers. Broadening search...")
+                # Fallback to general site search
+                broad_results = core_trials.fetch_trials(current_site, limit=limit_results)
+                st.dataframe(pd.DataFrame(broad_results), width="stretch", hide_index=True)
+                
+        except Exception as e:
+            st.error(f"Discovery Engine Offline: {e}")
+            # Fallback to legacy local view as a last resort
+            with open("backend/knowledge_base/trials.json", 'r') as f:
+                all_trials = json.load(f)['trials']
+            st.dataframe(pd.DataFrame(all_trials), width="stretch", hide_index=True)
 
     with tabs[2]: # MOLECULAR WORKBENCH
         st.markdown("### 🧬 Molecular Workbench: Genomic Signature Depth")
