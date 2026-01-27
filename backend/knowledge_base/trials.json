@@ -1,0 +1,67 @@
+{
+    "trials": [
+        {
+            "id": "NCT03909334",
+            "name": "FLAURA2: Osimertinib + Chemo in NSCLC",
+            "site": "lung",
+            "biomarker": "EGFR",
+            "phase": "III",
+            "status": "Recruiting",
+            "location": "Institutional Core"
+        },
+        {
+            "id": "NCT03150576",
+            "name": "OlympiAD Extension: Olaparib Monotherapy",
+            "site": "breast",
+            "biomarker": "BRCA1/2",
+            "phase": "III",
+            "status": "Active",
+            "location": "Multi-Center"
+        },
+        {
+            "id": "NCT03262272",
+            "name": "ADAURA: Adjuvant Osimertinib",
+            "site": "lung",
+            "biomarker": "EGFR",
+            "phase": "III",
+            "status": "Completed",
+            "location": "Global"
+        },
+        {
+            "id": "NCT03156630",
+            "name": "BEACON CRC: Encorafenib + Cetuximab",
+            "site": "colorectal",
+            "biomarker": "BRAF V600E",
+            "phase": "III",
+            "status": "Completed",
+            "location": "National"
+        },
+        {
+            "id": "NCT04052308",
+            "name": "TRIDENT-1: Repotrectinib in ROS1+",
+            "site": "lung",
+            "biomarker": "ROS1",
+            "phase": "I/II",
+            "status": "Recruiting",
+            "location": "Institutional"
+        },
+        {
+            "id": "NCT02861573",
+            "name": "KEYNOTE-158: TMB-H Pan-Cancer",
+            "site": "universal",
+            "biomarker": "TMB-H",
+            "phase": "II",
+            "status": "Active",
+            "location": "National"
+        },
+        {
+            "id": "NCT03554070",
+            "name": "KEYNOTE-177: Pembrolizumab in MSI-H CRC",
+            "site": "colorectal",
+            "biomarker": "MSI-H",
+            "phase": "III",
+            "status": "Active",
+            "location": "Institutional"
+        }
+    ]
+}

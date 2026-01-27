@@ -1,0 +1,27 @@
+{
+    "report_id": "NGS-2024-001",
+    "patient_id": "PX-9921",
+    "timestamp": "2024-01-24T14:30:00Z",
+    "biomarkers": {
+        "tmb": 18.5,
+        "hrd_status": "positive",
+        "msi_status": "MSS",
+        "signature_1_weight": 65.2,
+        "sv_count": 14
+    },
+    "variants": [
+        {
+            "gene": "EGFR",
+            "alteration": "L858R",
+            "vaf": 0.22,
+            "type": "SNP"
+        },
+        {
+            "gene": "TP53",
+            "alteration": "R175H",
+            "vaf": 0.45,
+            "type": "SNP"
+        }
+    ],
+    "platform": "Illumina MSK-IMPACT Custom Panel"
+}

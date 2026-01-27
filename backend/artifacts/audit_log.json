@@ -1,0 +1,302 @@
+[
+    {
+        "timestamp": "2026-01-24T21:31:24.623650",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:33:56.181705",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: lung - III"
+    },
+    {
+        "timestamp": "2026-01-24T21:34:52.815136",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: lung - III"
+    },
+    {
+        "timestamp": "2026-01-24T21:35:34.207747",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: lung - III"
+    },
+    {
+        "timestamp": "2026-01-24T21:35:37.308811",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: lung - III"
+    },
+    {
+        "timestamp": "2026-01-24T21:35:37.549436",
+        "user": "SYSTEM_ADMIN",
+        "event": "MTB_RESOLUTION",
+        "details": "Case PX-8812 resolved by board."
+    },
+    {
+        "timestamp": "2026-01-24T21:42:41.177683",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:43:57.239934",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:43:58.228060",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:43:59.052331",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:43:59.843562",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:00.621499",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:01.568633",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:02.241767",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:02.930536",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:03.658409",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:04.422911",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:05.245435",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:05.955221",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:06.694142",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:07.375210",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:08.048640",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:08.741239",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:09.467569",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:10.003849",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:10.693536",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:11.372091",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:12.058340",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:12.712816",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:13.546091",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:14.221412",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:14.888624",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:15.668756",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:16.779243",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:17.459100",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:18.191318",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:18.881638",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:19.781992",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:20.381275",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:21.412656",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:22.170066",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:22.823939",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:23.474020",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:24.268955",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:44:25.126122",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:47:56.891053",
+        "user": "SYSTEM_ADMIN",
+        "event": "DB_SEED",
+        "details": "Pre-populated 500 retrospective validation cases."
+    },
+    {
+        "timestamp": "2026-01-24T21:49:09.292265",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:50:28.003736",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T21:58:25.579768",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    },
+    {
+        "timestamp": "2026-01-24T22:02:26.905850",
+        "user": "SYSTEM_ADMIN",
+        "event": "INFERENCE_TRIGGERED",
+        "details": "Profile: breast - IV"
+    }
+]

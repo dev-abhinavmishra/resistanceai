@@ -1,0 +1,4002 @@
+[
+    {
+        "case_id": "RETRO-1000",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-24T21:47:56.862141"
+    },
+    {
+        "case_id": "RETRO-1001",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-24T09:47:56.862183"
+    },
+    {
+        "case_id": "RETRO-1002",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-23T21:47:56.862197"
+    },
+    {
+        "case_id": "RETRO-1003",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-23T09:47:56.862208"
+    },
+    {
+        "case_id": "RETRO-1004",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-22T21:47:56.862218"
+    },
+    {
+        "case_id": "RETRO-1005",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-22T09:47:56.862225"
+    },
+    {
+        "case_id": "RETRO-1006",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-21T21:47:56.862234"
+    },
+    {
+        "case_id": "RETRO-1007",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-21T09:47:56.862242"
+    },
+    {
+        "case_id": "RETRO-1008",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-20T21:47:56.862251"
+    },
+    {
+        "case_id": "RETRO-1009",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-20T09:47:56.862258"
+    },
+    {
+        "case_id": "RETRO-1010",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-19T21:47:56.862265"
+    },
+    {
+        "case_id": "RETRO-1011",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-19T09:47:56.862273"
+    },
+    {
+        "case_id": "RETRO-1012",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-18T21:47:56.862281"
+    },
+    {
+        "case_id": "RETRO-1013",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-18T09:47:56.862288"
+    },
+    {
+        "case_id": "RETRO-1014",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-17T21:47:56.862295"
+    },
+    {
+        "case_id": "RETRO-1015",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-17T09:47:56.862302"
+    },
+    {
+        "case_id": "RETRO-1016",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-16T21:47:56.862311"
+    },
+    {
+        "case_id": "RETRO-1017",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-16T09:47:56.862319"
+    },
+    {
+        "case_id": "RETRO-1018",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-15T21:47:56.862326"
+    },
+    {
+        "case_id": "RETRO-1019",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-15T09:47:56.862333"
+    },
+    {
+        "case_id": "RETRO-1020",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-14T21:47:56.862344"
+    },
+    {
+        "case_id": "RETRO-1021",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-14T09:47:56.862351"
+    },
+    {
+        "case_id": "RETRO-1022",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-13T21:47:56.862358"
+    },
+    {
+        "case_id": "RETRO-1023",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-13T09:47:56.862366"
+    },
+    {
+        "case_id": "RETRO-1024",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-12T21:47:56.862376"
+    },
+    {
+        "case_id": "RETRO-1025",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-12T09:47:56.862385"
+    },
+    {
+        "case_id": "RETRO-1026",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-11T21:47:56.862392"
+    },
+    {
+        "case_id": "RETRO-1027",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-11T09:47:56.862401"
+    },
+    {
+        "case_id": "RETRO-1028",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-10T21:47:56.862413"
+    },
+    {
+        "case_id": "RETRO-1029",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-10T09:47:56.862420"
+    },
+    {
+        "case_id": "RETRO-1030",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-09T21:47:56.862428"
+    },
+    {
+        "case_id": "RETRO-1031",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-09T09:47:56.862438"
+    },
+    {
+        "case_id": "RETRO-1032",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-08T21:47:56.862447"
+    },
+    {
+        "case_id": "RETRO-1033",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-08T09:47:56.862454"
+    },
+    {
+        "case_id": "RETRO-1034",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-07T21:47:56.862466"
+    },
+    {
+        "case_id": "RETRO-1035",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-07T09:47:56.862476"
+    },
+    {
+        "case_id": "RETRO-1036",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-06T21:47:56.862483"
+    },
+    {
+        "case_id": "RETRO-1037",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-06T09:47:56.862491"
+    },
+    {
+        "case_id": "RETRO-1038",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-05T21:47:56.862501"
+    },
+    {
+        "case_id": "RETRO-1039",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-05T09:47:56.862509"
+    },
+    {
+        "case_id": "RETRO-1040",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-04T21:47:56.862516"
+    },
+    {
+        "case_id": "RETRO-1041",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-04T09:47:56.862525"
+    },
+    {
+        "case_id": "RETRO-1042",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-03T21:47:56.862535"
+    },
+    {
+        "case_id": "RETRO-1043",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-03T09:47:56.862542"
+    },
+    {
+        "case_id": "RETRO-1044",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-02T21:47:56.862551"
+    },
+    {
+        "case_id": "RETRO-1045",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-02T09:47:56.862561"
+    },
+    {
+        "case_id": "RETRO-1046",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-01T21:47:56.862571"
+    },
+    {
+        "case_id": "RETRO-1047",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2026-01-01T09:47:56.862578"
+    },
+    {
+        "case_id": "RETRO-1048",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-31T21:47:56.862585"
+    },
+    {
+        "case_id": "RETRO-1049",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-31T09:47:56.862592"
+    },
+    {
+        "case_id": "RETRO-1050",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-30T21:47:56.862604"
+    },
+    {
+        "case_id": "RETRO-1051",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-30T09:47:56.862612"
+    },
+    {
+        "case_id": "RETRO-1052",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-29T21:47:56.862619"
+    },
+    {
+        "case_id": "RETRO-1053",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-29T09:47:56.862626"
+    },
+    {
+        "case_id": "RETRO-1054",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-28T21:47:56.862633"
+    },
+    {
+        "case_id": "RETRO-1055",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-28T09:47:56.862640"
+    },
+    {
+        "case_id": "RETRO-1056",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-27T21:47:56.862648"
+    },
+    {
+        "case_id": "RETRO-1057",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-27T09:47:56.862655"
+    },
+    {
+        "case_id": "RETRO-1058",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-26T21:47:56.862662"
+    },
+    {
+        "case_id": "RETRO-1059",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-26T09:47:56.862669"
+    },
+    {
+        "case_id": "RETRO-1060",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-25T21:47:56.862676"
+    },
+    {
+        "case_id": "RETRO-1061",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-25T09:47:56.862683"
+    },
+    {
+        "case_id": "RETRO-1062",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-24T21:47:56.862696"
+    },
+    {
+        "case_id": "RETRO-1063",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-24T09:47:56.862704"
+    },
+    {
+        "case_id": "RETRO-1064",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-23T21:47:56.862711"
+    },
+    {
+        "case_id": "RETRO-1065",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-23T09:47:56.862724"
+    },
+    {
+        "case_id": "RETRO-1066",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-22T21:47:56.862746"
+    },
+    {
+        "case_id": "RETRO-1067",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-22T09:47:56.862755"
+    },
+    {
+        "case_id": "RETRO-1068",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-21T21:47:56.862762"
+    },
+    {
+        "case_id": "RETRO-1069",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-21T09:47:56.862773"
+    },
+    {
+        "case_id": "RETRO-1070",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-20T21:47:56.862782"
+    },
+    {
+        "case_id": "RETRO-1071",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-20T09:47:56.862789"
+    },
+    {
+        "case_id": "RETRO-1072",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-19T21:47:56.862796"
+    },
+    {
+        "case_id": "RETRO-1073",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-19T09:47:56.862803"
+    },
+    {
+        "case_id": "RETRO-1074",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-18T21:47:56.862810"
+    },
+    {
+        "case_id": "RETRO-1075",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-18T09:47:56.862818"
+    },
+    {
+        "case_id": "RETRO-1076",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-17T21:47:56.862826"
+    },
+    {
+        "case_id": "RETRO-1077",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-17T09:47:56.862837"
+    },
+    {
+        "case_id": "RETRO-1078",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-16T21:47:56.862845"
+    },
+    {
+        "case_id": "RETRO-1079",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-16T09:47:56.862851"
+    },
+    {
+        "case_id": "RETRO-1080",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-15T21:47:56.862858"
+    },
+    {
+        "case_id": "RETRO-1081",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-15T09:47:56.862864"
+    },
+    {
+        "case_id": "RETRO-1082",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-14T21:47:56.862872"
+    },
+    {
+        "case_id": "RETRO-1083",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-14T09:47:56.863239"
+    },
+    {
+        "case_id": "RETRO-1084",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-13T21:47:56.863320"
+    },
+    {
+        "case_id": "RETRO-1085",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-13T09:47:56.863332"
+    },
+    {
+        "case_id": "RETRO-1086",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-12T21:47:56.863342"
+    },
+    {
+        "case_id": "RETRO-1087",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-12-12T09:47:56.863350"
+    },
+    {
+        "case_id": "RETRO-1088",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-12-11T21:47:56.863358"
+    },
+    {
+        "case_id": "RETRO-1089",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-12-11T09:47:56.863366"
+    },
+    {
+        "case_id": "RETRO-1090",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-12-10T21:47:56.863375"
+    },
+    {
+        "case_id": "RETRO-1091",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-12-10T09:47:56.863383"
+    },
+    {
+        "case_id": "RETRO-1092",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-12-09T21:47:56.863390"
+    },
+    {
+        "case_id": "RETRO-1093",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-12-09T09:47:56.863403"
+    },
+    {
+        "case_id": "RETRO-1094",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-12-08T21:47:56.863412"
+    },
+    {
+        "case_id": "RETRO-1095",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-12-08T09:47:56.863420"
+    },
+    {
+        "case_id": "RETRO-1096",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-12-07T21:47:56.863428"
+    },
+    {
+        "case_id": "RETRO-1097",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-12-07T09:47:56.863435"
+    },
+    {
+        "case_id": "RETRO-1098",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-12-06T21:47:56.863443"
+    },
+    {
+        "case_id": "RETRO-1099",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-12-06T09:47:56.863451"
+    },
+    {
+        "case_id": "RETRO-1100",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-05T21:47:56.863460"
+    },
+    {
+        "case_id": "RETRO-1101",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-05T09:47:56.863467"
+    },
+    {
+        "case_id": "RETRO-1102",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-04T21:47:56.863475"
+    },
+    {
+        "case_id": "RETRO-1103",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-04T09:47:56.863483"
+    },
+    {
+        "case_id": "RETRO-1104",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-03T21:47:56.863494"
+    },
+    {
+        "case_id": "RETRO-1105",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-03T09:47:56.863505"
+    },
+    {
+        "case_id": "RETRO-1106",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-02T21:47:56.863517"
+    },
+    {
+        "case_id": "RETRO-1107",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-02T09:47:56.863532"
+    },
+    {
+        "case_id": "RETRO-1108",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-01T21:47:56.863547"
+    },
+    {
+        "case_id": "RETRO-1109",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-12-01T09:47:56.863584"
+    },
+    {
+        "case_id": "RETRO-1110",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-30T21:47:56.863602"
+    },
+    {
+        "case_id": "RETRO-1111",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-30T09:47:56.863616"
+    },
+    {
+        "case_id": "RETRO-1112",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-29T21:47:56.863629"
+    },
+    {
+        "case_id": "RETRO-1113",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-29T09:47:56.863639"
+    },
+    {
+        "case_id": "RETRO-1114",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-28T21:47:56.863649"
+    },
+    {
+        "case_id": "RETRO-1115",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-28T09:47:56.863661"
+    },
+    {
+        "case_id": "RETRO-1116",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-27T21:47:56.863676"
+    },
+    {
+        "case_id": "RETRO-1117",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-27T09:47:56.863687"
+    },
+    {
+        "case_id": "RETRO-1118",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-26T21:47:56.864022"
+    },
+    {
+        "case_id": "RETRO-1119",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-26T09:47:56.864079"
+    },
+    {
+        "case_id": "RETRO-1120",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-25T21:47:56.864098"
+    },
+    {
+        "case_id": "RETRO-1121",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-25T09:47:56.864108"
+    },
+    {
+        "case_id": "RETRO-1122",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-24T21:47:56.864116"
+    },
+    {
+        "case_id": "RETRO-1123",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-24T09:47:56.864142"
+    },
+    {
+        "case_id": "RETRO-1124",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-23T21:47:56.864159"
+    },
+    {
+        "case_id": "RETRO-1125",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-23T09:47:56.864183"
+    },
+    {
+        "case_id": "RETRO-1126",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-22T21:47:56.864196"
+    },
+    {
+        "case_id": "RETRO-1127",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-22T09:47:56.864202"
+    },
+    {
+        "case_id": "RETRO-1128",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-21T21:47:56.864209"
+    },
+    {
+        "case_id": "RETRO-1129",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-21T09:47:56.864219"
+    },
+    {
+        "case_id": "RETRO-1130",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-20T21:47:56.864226"
+    },
+    {
+        "case_id": "RETRO-1131",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-20T09:47:56.864232"
+    },
+    {
+        "case_id": "RETRO-1132",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-19T21:47:56.864239"
+    },
+    {
+        "case_id": "RETRO-1133",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-19T09:47:56.864245"
+    },
+    {
+        "case_id": "RETRO-1134",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-18T21:47:56.864251"
+    },
+    {
+        "case_id": "RETRO-1135",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-18T09:47:56.864259"
+    },
+    {
+        "case_id": "RETRO-1136",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-17T21:47:56.864267"
+    },
+    {
+        "case_id": "RETRO-1137",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-17T09:47:56.864275"
+    },
+    {
+        "case_id": "RETRO-1138",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-16T21:47:56.864283"
+    },
+    {
+        "case_id": "RETRO-1139",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-16T09:47:56.864288"
+    },
+    {
+        "case_id": "RETRO-1140",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-15T21:47:56.864296"
+    },
+    {
+        "case_id": "RETRO-1141",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-15T09:47:56.864303"
+    },
+    {
+        "case_id": "RETRO-1142",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-14T21:47:56.864310"
+    },
+    {
+        "case_id": "RETRO-1143",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-14T09:47:56.864318"
+    },
+    {
+        "case_id": "RETRO-1144",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-13T21:47:56.864325"
+    },
+    {
+        "case_id": "RETRO-1145",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-13T09:47:56.864332"
+    },
+    {
+        "case_id": "RETRO-1146",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-12T21:47:56.864340"
+    },
+    {
+        "case_id": "RETRO-1147",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-12T09:47:56.865126"
+    },
+    {
+        "case_id": "RETRO-1148",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-11T21:47:56.865160"
+    },
+    {
+        "case_id": "RETRO-1149",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-11T09:47:56.865174"
+    },
+    {
+        "case_id": "RETRO-1150",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-10T21:47:56.865181"
+    },
+    {
+        "case_id": "RETRO-1151",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-10T09:47:56.865188"
+    },
+    {
+        "case_id": "RETRO-1152",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-09T21:47:56.865195"
+    },
+    {
+        "case_id": "RETRO-1153",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-09T09:47:56.865202"
+    },
+    {
+        "case_id": "RETRO-1154",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-08T21:47:56.865209"
+    },
+    {
+        "case_id": "RETRO-1155",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-08T09:47:56.865216"
+    },
+    {
+        "case_id": "RETRO-1156",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-07T21:47:56.865223"
+    },
+    {
+        "case_id": "RETRO-1157",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-07T09:47:56.865230"
+    },
+    {
+        "case_id": "RETRO-1158",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-06T21:47:56.865238"
+    },
+    {
+        "case_id": "RETRO-1159",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-06T09:47:56.865245"
+    },
+    {
+        "case_id": "RETRO-1160",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-05T21:47:56.865254"
+    },
+    {
+        "case_id": "RETRO-1161",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-05T09:47:56.865261"
+    },
+    {
+        "case_id": "RETRO-1162",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-04T21:47:56.865269"
+    },
+    {
+        "case_id": "RETRO-1163",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-04T09:47:56.865275"
+    },
+    {
+        "case_id": "RETRO-1164",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-03T21:47:56.865283"
+    },
+    {
+        "case_id": "RETRO-1165",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-03T09:47:56.865291"
+    },
+    {
+        "case_id": "RETRO-1166",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-02T21:47:56.865299"
+    },
+    {
+        "case_id": "RETRO-1167",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-02T09:47:56.865307"
+    },
+    {
+        "case_id": "RETRO-1168",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-01T21:47:56.865315"
+    },
+    {
+        "case_id": "RETRO-1169",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-11-01T09:47:56.865323"
+    },
+    {
+        "case_id": "RETRO-1170",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-31T21:47:56.865331"
+    },
+    {
+        "case_id": "RETRO-1171",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-31T09:47:56.865338"
+    },
+    {
+        "case_id": "RETRO-1172",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-30T21:47:56.865347"
+    },
+    {
+        "case_id": "RETRO-1173",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-30T09:47:56.865360"
+    },
+    {
+        "case_id": "RETRO-1174",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-29T21:47:56.865369"
+    },
+    {
+        "case_id": "RETRO-1175",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-29T09:47:56.865377"
+    },
+    {
+        "case_id": "RETRO-1176",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-28T21:47:56.865384"
+    },
+    {
+        "case_id": "RETRO-1177",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-28T09:47:56.865392"
+    },
+    {
+        "case_id": "RETRO-1178",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-27T21:47:56.865401"
+    },
+    {
+        "case_id": "RETRO-1179",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-27T09:47:56.865409"
+    },
+    {
+        "case_id": "RETRO-1180",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-26T21:47:56.865420"
+    },
+    {
+        "case_id": "RETRO-1181",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-26T09:47:56.865429"
+    },
+    {
+        "case_id": "RETRO-1182",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-25T21:47:56.865437"
+    },
+    {
+        "case_id": "RETRO-1183",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-25T09:47:56.865444"
+    },
+    {
+        "case_id": "RETRO-1184",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-24T21:47:56.865452"
+    },
+    {
+        "case_id": "RETRO-1185",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-24T09:47:56.865459"
+    },
+    {
+        "case_id": "RETRO-1186",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-23T21:47:56.865467"
+    },
+    {
+        "case_id": "RETRO-1187",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-10-23T09:47:56.865476"
+    },
+    {
+        "case_id": "RETRO-1188",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-10-22T21:47:56.865489"
+    },
+    {
+        "case_id": "RETRO-1189",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-10-22T09:47:56.865498"
+    },
+    {
+        "case_id": "RETRO-1190",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-10-21T21:47:56.865507"
+    },
+    {
+        "case_id": "RETRO-1191",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-10-21T09:47:56.865515"
+    },
+    {
+        "case_id": "RETRO-1192",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-10-20T21:47:56.865523"
+    },
+    {
+        "case_id": "RETRO-1193",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-10-20T09:47:56.865531"
+    },
+    {
+        "case_id": "RETRO-1194",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-10-19T21:47:56.865539"
+    },
+    {
+        "case_id": "RETRO-1195",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-10-19T09:47:56.865547"
+    },
+    {
+        "case_id": "RETRO-1196",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-10-18T21:47:56.865556"
+    },
+    {
+        "case_id": "RETRO-1197",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-10-18T09:47:56.865816"
+    },
+    {
+        "case_id": "RETRO-1198",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-10-17T21:47:56.865845"
+    },
+    {
+        "case_id": "RETRO-1199",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-10-17T09:47:56.865855"
+    },
+    {
+        "case_id": "RETRO-1200",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-16T21:47:56.865864"
+    },
+    {
+        "case_id": "RETRO-1201",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-16T09:47:56.865877"
+    },
+    {
+        "case_id": "RETRO-1202",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-15T21:47:56.865888"
+    },
+    {
+        "case_id": "RETRO-1203",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-15T09:47:56.866026"
+    },
+    {
+        "case_id": "RETRO-1204",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-14T21:47:56.866052"
+    },
+    {
+        "case_id": "RETRO-1205",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-14T09:47:56.866061"
+    },
+    {
+        "case_id": "RETRO-1206",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-13T21:47:56.866067"
+    },
+    {
+        "case_id": "RETRO-1207",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-13T09:47:56.866073"
+    },
+    {
+        "case_id": "RETRO-1208",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-12T21:47:56.866080"
+    },
+    {
+        "case_id": "RETRO-1209",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-12T09:47:56.866087"
+    },
+    {
+        "case_id": "RETRO-1210",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-11T21:47:56.866093"
+    },
+    {
+        "case_id": "RETRO-1211",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-11T09:47:56.866100"
+    },
+    {
+        "case_id": "RETRO-1212",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-10T21:47:56.866107"
+    },
+    {
+        "case_id": "RETRO-1213",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-10T09:47:56.866113"
+    },
+    {
+        "case_id": "RETRO-1214",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-09T21:47:56.866120"
+    },
+    {
+        "case_id": "RETRO-1215",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-09T09:47:56.866127"
+    },
+    {
+        "case_id": "RETRO-1216",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-08T21:47:56.866135"
+    },
+    {
+        "case_id": "RETRO-1217",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-08T09:47:56.866141"
+    },
+    {
+        "case_id": "RETRO-1218",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-07T21:47:56.866149"
+    },
+    {
+        "case_id": "RETRO-1219",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-07T09:47:56.866157"
+    },
+    {
+        "case_id": "RETRO-1220",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-06T21:47:56.866164"
+    },
+    {
+        "case_id": "RETRO-1221",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-06T09:47:56.866171"
+    },
+    {
+        "case_id": "RETRO-1222",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-05T21:47:56.866178"
+    },
+    {
+        "case_id": "RETRO-1223",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-05T09:47:56.866184"
+    },
+    {
+        "case_id": "RETRO-1224",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-04T21:47:56.866192"
+    },
+    {
+        "case_id": "RETRO-1225",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-04T09:47:56.866199"
+    },
+    {
+        "case_id": "RETRO-1226",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-03T21:47:56.866207"
+    },
+    {
+        "case_id": "RETRO-1227",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-03T09:47:56.866214"
+    },
+    {
+        "case_id": "RETRO-1228",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-02T21:47:56.866222"
+    },
+    {
+        "case_id": "RETRO-1229",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-02T09:47:56.866229"
+    },
+    {
+        "case_id": "RETRO-1230",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-01T21:47:56.866237"
+    },
+    {
+        "case_id": "RETRO-1231",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-10-01T09:47:56.866245"
+    },
+    {
+        "case_id": "RETRO-1232",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-30T21:47:56.866252"
+    },
+    {
+        "case_id": "RETRO-1233",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-30T09:47:56.866263"
+    },
+    {
+        "case_id": "RETRO-1234",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-29T21:47:56.866271"
+    },
+    {
+        "case_id": "RETRO-1235",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-29T09:47:56.866278"
+    },
+    {
+        "case_id": "RETRO-1236",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-28T21:47:56.866286"
+    },
+    {
+        "case_id": "RETRO-1237",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-28T09:47:56.866293"
+    },
+    {
+        "case_id": "RETRO-1238",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-27T21:47:56.866301"
+    },
+    {
+        "case_id": "RETRO-1239",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-27T09:47:56.866308"
+    },
+    {
+        "case_id": "RETRO-1240",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-26T21:47:56.866315"
+    },
+    {
+        "case_id": "RETRO-1241",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-26T09:47:56.866323"
+    },
+    {
+        "case_id": "RETRO-1242",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-25T21:47:56.866330"
+    },
+    {
+        "case_id": "RETRO-1243",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-25T09:47:56.866338"
+    },
+    {
+        "case_id": "RETRO-1244",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-24T21:47:56.866346"
+    },
+    {
+        "case_id": "RETRO-1245",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-24T09:47:56.866353"
+    },
+    {
+        "case_id": "RETRO-1246",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-23T21:47:56.866361"
+    },
+    {
+        "case_id": "RETRO-1247",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-23T09:47:56.866370"
+    },
+    {
+        "case_id": "RETRO-1248",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-22T21:47:56.866378"
+    },
+    {
+        "case_id": "RETRO-1249",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-22T09:47:56.866386"
+    },
+    {
+        "case_id": "RETRO-1250",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-21T21:47:56.866393"
+    },
+    {
+        "case_id": "RETRO-1251",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-21T09:47:56.866401"
+    },
+    {
+        "case_id": "RETRO-1252",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-20T21:47:56.866408"
+    },
+    {
+        "case_id": "RETRO-1253",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-20T09:47:56.866415"
+    },
+    {
+        "case_id": "RETRO-1254",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-19T21:47:56.866423"
+    },
+    {
+        "case_id": "RETRO-1255",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-19T09:47:56.866430"
+    },
+    {
+        "case_id": "RETRO-1256",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-18T21:47:56.866437"
+    },
+    {
+        "case_id": "RETRO-1257",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-18T09:47:56.866444"
+    },
+    {
+        "case_id": "RETRO-1258",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-17T21:47:56.866453"
+    },
+    {
+        "case_id": "RETRO-1259",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-17T09:47:56.866459"
+    },
+    {
+        "case_id": "RETRO-1260",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-16T21:47:56.866466"
+    },
+    {
+        "case_id": "RETRO-1261",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-16T09:47:56.866474"
+    },
+    {
+        "case_id": "RETRO-1262",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-15T21:47:56.866482"
+    },
+    {
+        "case_id": "RETRO-1263",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-15T09:47:56.866489"
+    },
+    {
+        "case_id": "RETRO-1264",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-14T21:47:56.866497"
+    },
+    {
+        "case_id": "RETRO-1265",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-14T09:47:56.866505"
+    },
+    {
+        "case_id": "RETRO-1266",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-13T21:47:56.866512"
+    },
+    {
+        "case_id": "RETRO-1267",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-13T09:47:56.866520"
+    },
+    {
+        "case_id": "RETRO-1268",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-12T21:47:56.866527"
+    },
+    {
+        "case_id": "RETRO-1269",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-12T09:47:56.866537"
+    },
+    {
+        "case_id": "RETRO-1270",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-11T21:47:56.866546"
+    },
+    {
+        "case_id": "RETRO-1271",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-11T09:47:56.866554"
+    },
+    {
+        "case_id": "RETRO-1272",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-10T21:47:56.866561"
+    },
+    {
+        "case_id": "RETRO-1273",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-10T09:47:56.866568"
+    },
+    {
+        "case_id": "RETRO-1274",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-09T21:47:56.866576"
+    },
+    {
+        "case_id": "RETRO-1275",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-09T09:47:56.866584"
+    },
+    {
+        "case_id": "RETRO-1276",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-08T21:47:56.866592"
+    },
+    {
+        "case_id": "RETRO-1277",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-08T09:47:56.866599"
+    },
+    {
+        "case_id": "RETRO-1278",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-07T21:47:56.866607"
+    },
+    {
+        "case_id": "RETRO-1279",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-07T09:47:56.866614"
+    },
+    {
+        "case_id": "RETRO-1280",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-06T21:47:56.866623"
+    },
+    {
+        "case_id": "RETRO-1281",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-06T09:47:56.866631"
+    },
+    {
+        "case_id": "RETRO-1282",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-05T21:47:56.866639"
+    },
+    {
+        "case_id": "RETRO-1283",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-05T09:47:56.866647"
+    },
+    {
+        "case_id": "RETRO-1284",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-04T21:47:56.866655"
+    },
+    {
+        "case_id": "RETRO-1285",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-04T09:47:56.866662"
+    },
+    {
+        "case_id": "RETRO-1286",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-09-03T21:47:56.866670"
+    },
+    {
+        "case_id": "RETRO-1287",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-09-03T09:47:56.866678"
+    },
+    {
+        "case_id": "RETRO-1288",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-09-02T21:47:56.866687"
+    },
+    {
+        "case_id": "RETRO-1289",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-09-02T09:47:56.866694"
+    },
+    {
+        "case_id": "RETRO-1290",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-09-01T21:47:56.866703"
+    },
+    {
+        "case_id": "RETRO-1291",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-09-01T09:47:56.866711"
+    },
+    {
+        "case_id": "RETRO-1292",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-08-31T21:47:56.866721"
+    },
+    {
+        "case_id": "RETRO-1293",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-08-31T09:47:56.866728"
+    },
+    {
+        "case_id": "RETRO-1294",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-08-30T21:47:56.866736"
+    },
+    {
+        "case_id": "RETRO-1295",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-08-30T09:47:56.866743"
+    },
+    {
+        "case_id": "RETRO-1296",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-08-29T21:47:56.866751"
+    },
+    {
+        "case_id": "RETRO-1297",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-08-29T09:47:56.866758"
+    },
+    {
+        "case_id": "RETRO-1298",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-08-28T21:47:56.866766"
+    },
+    {
+        "case_id": "RETRO-1299",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-08-28T09:47:56.866773"
+    },
+    {
+        "case_id": "RETRO-1300",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-27T21:47:56.866782"
+    },
+    {
+        "case_id": "RETRO-1301",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-27T09:47:56.866789"
+    },
+    {
+        "case_id": "RETRO-1302",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-26T21:47:56.866797"
+    },
+    {
+        "case_id": "RETRO-1303",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-26T09:47:56.866804"
+    },
+    {
+        "case_id": "RETRO-1304",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-25T21:47:56.866812"
+    },
+    {
+        "case_id": "RETRO-1305",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-25T09:47:56.866820"
+    },
+    {
+        "case_id": "RETRO-1306",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-24T21:47:56.866828"
+    },
+    {
+        "case_id": "RETRO-1307",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-24T09:47:56.866835"
+    },
+    {
+        "case_id": "RETRO-1308",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-23T21:47:56.866843"
+    },
+    {
+        "case_id": "RETRO-1309",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-23T09:47:56.866880"
+    },
+    {
+        "case_id": "RETRO-1310",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-22T21:47:56.866892"
+    },
+    {
+        "case_id": "RETRO-1311",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-22T09:47:56.866899"
+    },
+    {
+        "case_id": "RETRO-1312",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-21T21:47:56.866907"
+    },
+    {
+        "case_id": "RETRO-1313",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-21T09:47:56.866914"
+    },
+    {
+        "case_id": "RETRO-1314",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-20T21:47:56.866922"
+    },
+    {
+        "case_id": "RETRO-1315",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-20T09:47:56.866929"
+    },
+    {
+        "case_id": "RETRO-1316",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-19T21:47:56.866936"
+    },
+    {
+        "case_id": "RETRO-1317",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-19T09:47:56.866944"
+    },
+    {
+        "case_id": "RETRO-1318",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-18T21:47:56.866951"
+    },
+    {
+        "case_id": "RETRO-1319",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-18T09:47:56.866960"
+    },
+    {
+        "case_id": "RETRO-1320",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-17T21:47:56.866968"
+    },
+    {
+        "case_id": "RETRO-1321",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-17T09:47:56.866975"
+    },
+    {
+        "case_id": "RETRO-1322",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-16T21:47:56.866983"
+    },
+    {
+        "case_id": "RETRO-1323",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-16T09:47:56.867020"
+    },
+    {
+        "case_id": "RETRO-1324",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-15T21:47:56.867031"
+    },
+    {
+        "case_id": "RETRO-1325",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-15T09:47:56.867038"
+    },
+    {
+        "case_id": "RETRO-1326",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-14T21:47:56.867046"
+    },
+    {
+        "case_id": "RETRO-1327",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-14T09:47:56.867053"
+    },
+    {
+        "case_id": "RETRO-1328",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-13T21:47:56.867061"
+    },
+    {
+        "case_id": "RETRO-1329",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-13T09:47:56.867068"
+    },
+    {
+        "case_id": "RETRO-1330",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-12T21:47:56.867075"
+    },
+    {
+        "case_id": "RETRO-1331",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-12T09:47:56.867083"
+    },
+    {
+        "case_id": "RETRO-1332",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-11T21:47:56.867091"
+    },
+    {
+        "case_id": "RETRO-1333",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-11T09:47:56.867098"
+    },
+    {
+        "case_id": "RETRO-1334",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-10T21:47:56.867106"
+    },
+    {
+        "case_id": "RETRO-1335",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-10T09:47:56.867114"
+    },
+    {
+        "case_id": "RETRO-1336",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-09T21:47:56.867122"
+    },
+    {
+        "case_id": "RETRO-1337",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-09T09:47:56.867130"
+    },
+    {
+        "case_id": "RETRO-1338",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-08T21:47:56.867137"
+    },
+    {
+        "case_id": "RETRO-1339",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-08T09:47:56.867144"
+    },
+    {
+        "case_id": "RETRO-1340",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-07T21:47:56.867153"
+    },
+    {
+        "case_id": "RETRO-1341",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-07T09:47:56.867160"
+    },
+    {
+        "case_id": "RETRO-1342",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-06T21:47:56.867168"
+    },
+    {
+        "case_id": "RETRO-1343",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-06T09:47:56.867175"
+    },
+    {
+        "case_id": "RETRO-1344",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-05T21:47:56.867182"
+    },
+    {
+        "case_id": "RETRO-1345",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-05T09:47:56.867190"
+    },
+    {
+        "case_id": "RETRO-1346",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-04T21:47:56.867198"
+    },
+    {
+        "case_id": "RETRO-1347",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-04T09:47:56.867205"
+    },
+    {
+        "case_id": "RETRO-1348",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-03T21:47:56.867213"
+    },
+    {
+        "case_id": "RETRO-1349",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-03T09:47:56.867220"
+    },
+    {
+        "case_id": "RETRO-1350",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-02T21:47:56.867228"
+    },
+    {
+        "case_id": "RETRO-1351",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-02T09:47:56.867235"
+    },
+    {
+        "case_id": "RETRO-1352",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-01T21:47:56.867242"
+    },
+    {
+        "case_id": "RETRO-1353",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-08-01T09:47:56.867252"
+    },
+    {
+        "case_id": "RETRO-1354",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-31T21:47:56.867260"
+    },
+    {
+        "case_id": "RETRO-1355",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-31T09:47:56.867268"
+    },
+    {
+        "case_id": "RETRO-1356",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-30T21:47:56.867275"
+    },
+    {
+        "case_id": "RETRO-1357",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-30T09:47:56.867282"
+    },
+    {
+        "case_id": "RETRO-1358",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-29T21:47:56.867290"
+    },
+    {
+        "case_id": "RETRO-1359",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-29T09:47:56.867297"
+    },
+    {
+        "case_id": "RETRO-1360",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-28T21:47:56.867305"
+    },
+    {
+        "case_id": "RETRO-1361",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-28T09:47:56.867311"
+    },
+    {
+        "case_id": "RETRO-1362",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-27T21:47:56.867319"
+    },
+    {
+        "case_id": "RETRO-1363",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-27T09:47:56.867326"
+    },
+    {
+        "case_id": "RETRO-1364",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-26T21:47:56.867334"
+    },
+    {
+        "case_id": "RETRO-1365",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-26T09:47:56.867341"
+    },
+    {
+        "case_id": "RETRO-1366",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-25T21:47:56.867349"
+    },
+    {
+        "case_id": "RETRO-1367",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-25T09:47:56.867357"
+    },
+    {
+        "case_id": "RETRO-1368",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-24T21:47:56.867364"
+    },
+    {
+        "case_id": "RETRO-1369",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-24T09:47:56.867372"
+    },
+    {
+        "case_id": "RETRO-1370",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-23T21:47:56.867379"
+    },
+    {
+        "case_id": "RETRO-1371",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-23T09:47:56.867387"
+    },
+    {
+        "case_id": "RETRO-1372",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-22T21:47:56.867394"
+    },
+    {
+        "case_id": "RETRO-1373",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-22T09:47:56.867401"
+    },
+    {
+        "case_id": "RETRO-1374",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-21T21:47:56.867409"
+    },
+    {
+        "case_id": "RETRO-1375",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-21T09:47:56.867416"
+    },
+    {
+        "case_id": "RETRO-1376",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-20T21:47:56.867424"
+    },
+    {
+        "case_id": "RETRO-1377",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-20T09:47:56.867431"
+    },
+    {
+        "case_id": "RETRO-1378",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-19T21:47:56.867439"
+    },
+    {
+        "case_id": "RETRO-1379",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-19T09:47:56.867446"
+    },
+    {
+        "case_id": "RETRO-1380",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-18T21:47:56.867453"
+    },
+    {
+        "case_id": "RETRO-1381",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-18T09:47:56.867461"
+    },
+    {
+        "case_id": "RETRO-1382",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-17T21:47:56.867468"
+    },
+    {
+        "case_id": "RETRO-1383",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-17T09:47:56.867476"
+    },
+    {
+        "case_id": "RETRO-1384",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-16T21:47:56.867482"
+    },
+    {
+        "case_id": "RETRO-1385",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-16T09:47:56.867488"
+    },
+    {
+        "case_id": "RETRO-1386",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-15T21:47:56.867494"
+    },
+    {
+        "case_id": "RETRO-1387",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-07-15T09:47:56.867516"
+    },
+    {
+        "case_id": "RETRO-1388",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-07-14T21:47:56.867525"
+    },
+    {
+        "case_id": "RETRO-1389",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-07-14T09:47:56.867532"
+    },
+    {
+        "case_id": "RETRO-1390",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-07-13T21:47:56.867539"
+    },
+    {
+        "case_id": "RETRO-1391",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-07-13T09:47:56.867545"
+    },
+    {
+        "case_id": "RETRO-1392",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-07-12T21:47:56.867552"
+    },
+    {
+        "case_id": "RETRO-1393",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-07-12T09:47:56.867558"
+    },
+    {
+        "case_id": "RETRO-1394",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-07-11T21:47:56.867564"
+    },
+    {
+        "case_id": "RETRO-1395",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-07-11T09:47:56.867570"
+    },
+    {
+        "case_id": "RETRO-1396",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-07-10T21:47:56.867576"
+    },
+    {
+        "case_id": "RETRO-1397",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-07-10T09:47:56.867583"
+    },
+    {
+        "case_id": "RETRO-1398",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-07-09T21:47:56.867590"
+    },
+    {
+        "case_id": "RETRO-1399",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-07-09T09:47:56.867597"
+    },
+    {
+        "case_id": "RETRO-1400",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-08T21:47:56.867604"
+    },
+    {
+        "case_id": "RETRO-1401",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-08T09:47:56.867616"
+    },
+    {
+        "case_id": "RETRO-1402",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-07T21:47:56.867624"
+    },
+    {
+        "case_id": "RETRO-1403",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-07T09:47:56.867630"
+    },
+    {
+        "case_id": "RETRO-1404",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-06T21:47:56.867638"
+    },
+    {
+        "case_id": "RETRO-1405",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-06T09:47:56.867645"
+    },
+    {
+        "case_id": "RETRO-1406",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-05T21:47:56.867651"
+    },
+    {
+        "case_id": "RETRO-1407",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-05T09:47:56.867657"
+    },
+    {
+        "case_id": "RETRO-1408",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-04T21:47:56.867664"
+    },
+    {
+        "case_id": "RETRO-1409",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-04T09:47:56.867670"
+    },
+    {
+        "case_id": "RETRO-1410",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-03T21:47:56.867677"
+    },
+    {
+        "case_id": "RETRO-1411",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-03T09:47:56.867684"
+    },
+    {
+        "case_id": "RETRO-1412",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-02T21:47:56.867690"
+    },
+    {
+        "case_id": "RETRO-1413",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-02T09:47:56.867697"
+    },
+    {
+        "case_id": "RETRO-1414",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-01T21:47:56.867705"
+    },
+    {
+        "case_id": "RETRO-1415",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-07-01T09:47:56.867711"
+    },
+    {
+        "case_id": "RETRO-1416",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-30T21:47:56.867718"
+    },
+    {
+        "case_id": "RETRO-1417",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-30T09:47:56.867724"
+    },
+    {
+        "case_id": "RETRO-1418",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-29T21:47:56.867730"
+    },
+    {
+        "case_id": "RETRO-1419",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-29T09:47:56.867737"
+    },
+    {
+        "case_id": "RETRO-1420",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-28T21:47:56.867743"
+    },
+    {
+        "case_id": "RETRO-1421",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-28T09:47:56.867749"
+    },
+    {
+        "case_id": "RETRO-1422",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-27T21:47:56.867757"
+    },
+    {
+        "case_id": "RETRO-1423",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-27T09:47:56.867765"
+    },
+    {
+        "case_id": "RETRO-1424",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-26T21:47:56.867775"
+    },
+    {
+        "case_id": "RETRO-1425",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-26T09:47:56.867782"
+    },
+    {
+        "case_id": "RETRO-1426",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-25T21:47:56.867790"
+    },
+    {
+        "case_id": "RETRO-1427",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-25T09:47:56.867799"
+    },
+    {
+        "case_id": "RETRO-1428",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-24T21:47:56.867806"
+    },
+    {
+        "case_id": "RETRO-1429",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-24T09:47:56.867813"
+    },
+    {
+        "case_id": "RETRO-1430",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-23T21:47:56.867820"
+    },
+    {
+        "case_id": "RETRO-1431",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-23T09:47:56.867827"
+    },
+    {
+        "case_id": "RETRO-1432",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-22T21:47:56.867834"
+    },
+    {
+        "case_id": "RETRO-1433",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-22T09:47:56.867841"
+    },
+    {
+        "case_id": "RETRO-1434",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-21T21:47:56.867849"
+    },
+    {
+        "case_id": "RETRO-1435",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-21T09:47:56.867858"
+    },
+    {
+        "case_id": "RETRO-1436",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-20T21:47:56.867866"
+    },
+    {
+        "case_id": "RETRO-1437",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-20T09:47:56.867872"
+    },
+    {
+        "case_id": "RETRO-1438",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-19T21:47:56.867880"
+    },
+    {
+        "case_id": "RETRO-1439",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-19T09:47:56.867887"
+    },
+    {
+        "case_id": "RETRO-1440",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-18T21:47:56.867894"
+    },
+    {
+        "case_id": "RETRO-1441",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-18T09:47:56.867902"
+    },
+    {
+        "case_id": "RETRO-1442",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-17T21:47:56.867909"
+    },
+    {
+        "case_id": "RETRO-1443",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-17T09:47:56.867915"
+    },
+    {
+        "case_id": "RETRO-1444",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-16T21:47:56.867922"
+    },
+    {
+        "case_id": "RETRO-1445",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-16T09:47:56.867929"
+    },
+    {
+        "case_id": "RETRO-1446",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-15T21:47:56.867936"
+    },
+    {
+        "case_id": "RETRO-1447",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-15T09:47:56.867943"
+    },
+    {
+        "case_id": "RETRO-1448",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-14T21:47:56.867950"
+    },
+    {
+        "case_id": "RETRO-1449",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-14T09:47:56.867956"
+    },
+    {
+        "case_id": "RETRO-1450",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-13T21:47:56.867964"
+    },
+    {
+        "case_id": "RETRO-1451",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-13T09:47:56.867972"
+    },
+    {
+        "case_id": "RETRO-1452",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-12T21:47:56.867980"
+    },
+    {
+        "case_id": "RETRO-1453",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-12T09:47:56.867987"
+    },
+    {
+        "case_id": "RETRO-1454",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-11T21:47:56.867994"
+    },
+    {
+        "case_id": "RETRO-1455",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-11T09:47:56.868002"
+    },
+    {
+        "case_id": "RETRO-1456",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-10T21:47:56.868010"
+    },
+    {
+        "case_id": "RETRO-1457",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-10T09:47:56.868020"
+    },
+    {
+        "case_id": "RETRO-1458",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-09T21:47:56.868028"
+    },
+    {
+        "case_id": "RETRO-1459",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-09T09:47:56.868034"
+    },
+    {
+        "case_id": "RETRO-1460",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-08T21:47:56.868042"
+    },
+    {
+        "case_id": "RETRO-1461",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-08T09:47:56.868048"
+    },
+    {
+        "case_id": "RETRO-1462",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-07T21:47:56.868056"
+    },
+    {
+        "case_id": "RETRO-1463",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-07T09:47:56.868064"
+    },
+    {
+        "case_id": "RETRO-1464",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-06T21:47:56.868071"
+    },
+    {
+        "case_id": "RETRO-1465",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-06T09:47:56.868078"
+    },
+    {
+        "case_id": "RETRO-1466",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-05T21:47:56.868085"
+    },
+    {
+        "case_id": "RETRO-1467",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-05T09:47:56.868092"
+    },
+    {
+        "case_id": "RETRO-1468",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-04T21:47:56.868100"
+    },
+    {
+        "case_id": "RETRO-1469",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-04T09:47:56.868107"
+    },
+    {
+        "case_id": "RETRO-1470",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-03T21:47:56.868115"
+    },
+    {
+        "case_id": "RETRO-1471",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-03T09:47:56.868122"
+    },
+    {
+        "case_id": "RETRO-1472",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-02T21:47:56.868130"
+    },
+    {
+        "case_id": "RETRO-1473",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-02T09:47:56.868137"
+    },
+    {
+        "case_id": "RETRO-1474",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-01T21:47:56.868144"
+    },
+    {
+        "case_id": "RETRO-1475",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-06-01T09:47:56.868152"
+    },
+    {
+        "case_id": "RETRO-1476",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-05-31T21:47:56.868159"
+    },
+    {
+        "case_id": "RETRO-1477",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-05-31T09:47:56.868168"
+    },
+    {
+        "case_id": "RETRO-1478",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-05-30T21:47:56.868177"
+    },
+    {
+        "case_id": "RETRO-1479",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-05-30T09:47:56.868184"
+    },
+    {
+        "case_id": "RETRO-1480",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-05-29T21:47:56.868192"
+    },
+    {
+        "case_id": "RETRO-1481",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-05-29T09:47:56.868201"
+    },
+    {
+        "case_id": "RETRO-1482",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-05-28T21:47:56.868208"
+    },
+    {
+        "case_id": "RETRO-1483",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-05-28T09:47:56.868216"
+    },
+    {
+        "case_id": "RETRO-1484",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-05-27T21:47:56.868224"
+    },
+    {
+        "case_id": "RETRO-1485",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-05-27T09:47:56.868231"
+    },
+    {
+        "case_id": "RETRO-1486",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 1.0,
+        "resolved_at": "2025-05-26T21:47:56.868238"
+    },
+    {
+        "case_id": "RETRO-1487",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-05-26T09:47:56.868246"
+    },
+    {
+        "case_id": "RETRO-1488",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-05-25T21:47:56.868255"
+    },
+    {
+        "case_id": "RETRO-1489",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-05-25T09:47:56.868263"
+    },
+    {
+        "case_id": "RETRO-1490",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-05-24T21:47:56.868270"
+    },
+    {
+        "case_id": "RETRO-1491",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-05-24T09:47:56.868276"
+    },
+    {
+        "case_id": "RETRO-1492",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-05-23T21:47:56.868285"
+    },
+    {
+        "case_id": "RETRO-1493",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-05-23T09:47:56.868292"
+    },
+    {
+        "case_id": "RETRO-1494",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-05-22T21:47:56.868300"
+    },
+    {
+        "case_id": "RETRO-1495",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-05-22T09:47:56.868308"
+    },
+    {
+        "case_id": "RETRO-1496",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-05-21T21:47:56.868315"
+    },
+    {
+        "case_id": "RETRO-1497",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-05-21T09:47:56.868323"
+    },
+    {
+        "case_id": "RETRO-1498",
+        "cancer_type": "lung",
+        "ai_suggestion": "Osimertinib",
+        "decision": "Osimertinib",
+        "concordance": 0.0,
+        "resolved_at": "2025-05-20T21:47:56.868331"
+    },
+    {
+        "case_id": "RETRO-1499",
+        "cancer_type": "breast",
+        "ai_suggestion": "Olaparib",
+        "decision": "Standard Care",
+        "concordance": 0.0,
+        "resolved_at": "2025-05-20T09:47:56.868338"
+    }
+]

@@ -1,0 +1,139 @@
+{
+    "cancer_types": {
+        "lung": {
+            "biomarkers": {
+                "EGFR": {
+                    "regimens": [
+                        {
+                            "name": "Osimertinib (Tagrisso®)",
+                            "type": "Targeted TKI",
+                            "line": "1st-Line",
+                            "guideline_tier": "NCCN Category 1",
+                            "evidence_level": "Level 1A",
+                            "regulatory_status": "FDA Approved",
+                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29151359/",
+                            "rationale": "Superior PFS vs older TKIs. Standard of care for EGFR+ NSCLC.",
+                            "patient_explanation": "A targeted pill that blocks the growth signals from the EGFR mutation in your tumor."
+                        }
+                    ]
+                },
+                "KRAS_G12C": {
+                    "regimens": [
+                        {
+                            "name": "Sotorasib (Lumakras®)",
+                            "type": "KRAS Inhibitor",
+                            "line": "2nd-Line",
+                            "guideline_tier": "NCCN Category 2A",
+                            "evidence_level": "Level 2A",
+                            "regulatory_status": "Accelerated Approval",
+                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34096052/",
+                            "rationale": "Targets specific G12C mutation. Used in patients who progressed on chemo/IO.",
+                            "patient_explanation": "A pill designed specifically to lock onto and 'turn off' the KRAS protein that drives cancer growth."
+                        }
+                    ]
+                },
+                "TMB-H": {
+                    "regimens": [
+                        {
+                            "name": "Pembrolizumab + Chemo",
+                            "type": "Immunotherapy Combo",
+                            "line": "1st-Line",
+                            "guideline_tier": "NCCN Category 1",
+                            "evidence_level": "Level 1A",
+                            "regulatory_status": "FDA Approved",
+                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30208455/",
+                            "rationale": "Synergistic effect in tumors with high mutational burden.",
+                            "patient_explanation": "A combination of immunotherapy to boost your immune system and traditional chemotherapy."
+                        }
+                    ]
+                }
+            }
+        },
+        "breast": {
+            "biomarkers": {
+                "HER2+": {
+                    "regimens": [
+                        {
+                            "name": "Trastuzumab + Pertuzumab",
+                            "type": "Dual Antibody Blockade",
+                            "line": "1st-Line",
+                            "guideline_tier": "ASCO/NCCN Preferred",
+                            "evidence_level": "Level 1A",
+                            "regulatory_status": "FDA Approved",
+                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/25730302/",
+                            "rationale": "CLEOPATRA trial showed significant OS benefit for dual HER2 targeting.",
+                            "patient_explanation": "Two intravenous medications that work together to stick to the outside of HER2+ cancer cells and signal the immune system to destroy them."
+                        }
+                    ]
+                },
+                "HRD_Positive": {
+                    "regimens": [
+                        {
+                            "name": "Olaparib (Lynparza®)",
+                            "type": "PARP Inhibitor",
+                            "line": "Adjuvant/Metastatic",
+                            "guideline_tier": "NCCN Category 1",
+                            "evidence_level": "Level 1A",
+                            "regulatory_status": "FDA Approved",
+                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34081729/",
+                            "rationale": "Targets DNA repair deficiency (OlympiA/OlympiAD).",
+                            "patient_explanation": "A medication that prevents cancer cells with DNA repair problems from fixing themselves, leading to cell death."
+                        }
+                    ]
+                }
+            }
+        },
+        "colorectal": {
+            "biomarkers": {
+                "BRAF_V600E": {
+                    "regimens": [
+                        {
+                            "name": "Encorafenib + Cetuximab",
+                            "type": "Targeted Combo",
+                            "line": "2nd-Line",
+                            "guideline_tier": "NCCN Category 1",
+                            "evidence_level": "Level 1A",
+                            "regulatory_status": "FDA Approved",
+                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31566309/",
+                            "rationale": "BEACON CRC trial demonstrated survival benefit for BRAF/EGFR inhibition.",
+                            "patient_explanation": "A combination therapy designed to shut down the BRAF growth pathway which is often resistant to chemotherapy in CRC."
+                        }
+                    ]
+                }
+            }
+        },
+        "melanoma": {
+            "biomarkers": {
+                "BRAF_V600": {
+                    "regimens": [
+                        {
+                            "name": "Dabrafenib + Trametinib",
+                            "type": "BRAF/MEK Inhibitor",
+                            "line": "1st-Line",
+                            "guideline_tier": "NCCN Preferred",
+                            "evidence_level": "Level 1A",
+                            "regulatory_status": "FDA Approved",
+                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31166680/",
+                            "rationale": "COMBI-d/v trials showed durable responses in BRAF+ cohorts.",
+                            "patient_explanation": "A two-pill daily regimen that targets the BRAF mutation common in melanoma."
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "universal_biomarkers": {
+        "MSI-H": [
+            {
+                "name": "Pembrolizumab (Keytruda®)",
+                "type": "Immune Checkpoint Blockade",
+                "line": "Pan-Cancer 2nd-Line+",
+                "guideline_tier": "FDA Site-Agnostic",
+                "evidence_level": "Level 1B",
+                "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28522730/",
+                "rationale": "First tissue-agnostic FDA approval based on KEYNOTE-177/158.",
+                "patient_explanation": "An immunotherapy that helps your immune system recognize and attack cancer cells that have 'micro-satellite' repair defects."
+            }
+        ]
+    }
+}
