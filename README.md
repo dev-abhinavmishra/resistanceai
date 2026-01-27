@@ -25,13 +25,27 @@ ResistanceAI is a high-fidelity clinical decision support platform designed for 
    streamlit run app.py
    ```
 
-## 🌐 Web Deployment (Streamlit Cloud)
-To make ResistanceAI accessible on the web:
-1. Push this project to a **GitHub repository**.
-2. Go to [Streamlit Cloud](https://share.streamlit.io/).
-3. Connect your GitHub account and select this repository.
-4. Set the Main file path to `app.py`.
-5. Click **Deploy**.
+## 🌐 Deployment Options
+
+### 1. Streamlit Cloud (Fast & Free)
+Ideal for demos. Simply push to GitHub and link to [share.streamlit.io](https://share.streamlit.io/).
+
+### 2. Hugging Face Spaces (Reliable & ML Optimized)
+Often provides better hardware than Streamlit Cloud's free tier.
+- Create a new "Space" on [Hugging Face](https://huggingface.co/spaces).
+- Select "Streamlit" as the SDK.
+- Connect your GitHub repo.
+
+### 3. Containerized Hosting (Maximum Performance)
+For production-grade speed and HIPAA-ready environments (AWS, Railway, Heroku):
+```bash
+# Build the container
+docker build -t resistance-ai .
+
+# Run locally to test
+docker run -p 8501:8501 resistance-ai
+```
+*Note: Platforms like Railway.app will automatically detect the `Dockerfile` and offer dedicated CPU/RAM, making the app much faster than free shared hosting.*
 
 ## 🧬 Validation Profile
 - **Alignment**: 87.4% retrospective concordance.
