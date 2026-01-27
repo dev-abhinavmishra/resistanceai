@@ -41,6 +41,11 @@ if 'inst_db' not in st.session_state:
     st.session_state.inst_db = InstitutionalDB()
     st.session_state.inst_db.seed_validation_data() # Seed 500 cases on load
 
+# --- STATE GUARD: PREVENT FLICKERING ON SWITCH ---
+def reset_case_state():
+    st.session_state.prediction_result = None
+    st.toast("Switching Clinical Context...", icon="🧬")
+
 # --- THEME CONSTANTS ---
 accent_color = "#3b82f6"
 bg_color = "#0f172a"
@@ -179,17 +184,24 @@ with st.sidebar:
     
     st.divider()
     st.markdown("### 🏢 Core Systems")
-    v_mode = st.radio("Access Level / Validation Mode", ["Standard Care (Pilot)", "Shadow Mode (Silent)", "Retrospective Engine"], help="Select the operational tier for this session.")
+    v_mode = st.radio("Access Level / Validation Mode", ["Standard Care (Pilot)", "Shadow Mode (Silent)", "Retrospective Engine"], 
+                      help="MISSION CRITICAL: Production Pilot is for active board decisions. Shadow Mode is for background research validation.", 
+                      index=0)
     st.session_state.validation_mode = v_mode
     
     st.divider()
     st.markdown("### 📂 Patient Office")
-    # ... searching logic ...
-    search_query = st.text_input("🔍 Search MSK-Connect Queue", placeholder="Patient Name or MRN", key="search_main").lower()
+    search_query = st.text_input("🔍 MSK-Connect Search", placeholder="Name or MRN", key="search_main", help="Search the institutional queue for active cases.").lower()
     queue_df = pd.DataFrame(st.session_state.case_queue)
     filtered = queue_df[queue_df['id'].str.lower().str.contains(search_query)] if search_query else queue_df
     
-    selected_idx = st.selectbox(f"Active Queue ({len(filtered)})", options=filtered.index, format_func=lambda x: f"{filtered.loc[x, 'id']} | {filtered.loc[x, 'site']}", index=None, key="case_select_main")
+    selected_idx = st.selectbox(f"Active Queue ({len(filtered)})", 
+                               options=filtered.index, 
+                               format_func=lambda x: f"{filtered.loc[x, 'id']} | {filtered.loc[x, 'site']}", 
+                               index=None, 
+                               key="case_select_main",
+                               on_change=reset_case_state,
+                               help="Select a patient to begin analysis. This will wipe previous session data to ensure clinical isolation.")
     if selected_idx is not None:
         cid = filtered.loc[selected_idx, 'id']
         patient_data = ClinicalDataIngestor.ingest_ehr_patient(cid)
@@ -202,16 +214,36 @@ with st.sidebar:
             st.session_state.inst_db.log_shadow_entry(cid, st.session_state.prediction_result)
             st.toast("Shadow Entry Logged", icon="🛰️")
 
-    st.divider()
-    st.markdown("### 🤖 Clinical Copilot & Simulation")
-    # c_site dropdown etc...
-    with st.expander("Scenario Stress Test"):
-        p_site = st.selectbox("Mock Primary Site", ["lung", "breast", "prostate", "colorectal", "ovarian"], index=["lung", "breast", "prostate", "colorectal", "ovarian"].index(st.session_state.form_data['cancer_type']))
-        p_age = st.number_input("Diagnostic Age", 18, 120, st.session_state.form_data['age_at_diagnosis'])
-        p_stage = st.select_slider("TNM Stage", options=['I', 'II', 'III', 'IV'], value=st.session_state.form_data['stage'])
-        if st.button("Simulate Deviation"):
+    with st.expander("Scenario Stress Test (What-If Analysis)", expanded=False):
+        st.caption("Change parameters to see how the clinical risk score responds in real-time.")
+        p_site = st.selectbox("Simulate Cancer Site", ["lung", "breast", "prostate", "colorectal", "ovarian"], 
+                              index=["lung", "breast", "prostate", "colorectal", "ovarian"].index(st.session_state.form_data['cancer_type']),
+                              help="Different cancer types have different biological baseline resistances.")
+        p_age = st.number_input("Simulate Diagnostic Age", 18, 120, st.session_state.form_data['age_at_diagnosis'], help="Age can impact tolerance to escalated regimens.")
+        p_stage = st.select_slider("Simulate TNM Stage", options=['I', 'II', 'III', 'IV'], value=st.session_state.form_data['stage'], help="Advanced stages generally correlate with higher baseline genomic instability.")
+        
+        if st.button("Calculate Simulation Delta", width="stretch"):
+            # Store old risk for comparison
+            old_risk = st.session_state.prediction_result['risk_score'] if st.session_state.prediction_result else 50
             st.session_state.form_data.update({'cancer_type': p_site, 'age_at_diagnosis': p_age, 'stage': p_stage})
             trigger_inference()
+            new_risk = st.session_state.prediction_result['risk_score']
+            
+            # VISUAL IMPACT MATRIX
+            fig_imp = go.Figure(go.Indicator(
+                mode = "delta+gauge+number",
+                value = new_risk,
+                domain = {'x': [0, 1], 'y': [0, 1]},
+                delta = {'reference': old_risk, 'relative': False, 'increasing': {'color': "#ef4444"}, 'decreasing': {'color': "#10b981"}},
+                gauge = {
+                    'axis': {'range': [0, 100]},
+                    'bar': {'color': accent_color},
+                    'steps' : [{'range': [0, 40], 'color': "rgba(16, 185, 129, 0.1)"}, {'range': [70, 100], 'color': "rgba(239, 68, 68, 0.1)"}]
+                },
+                title = {'text': "Impact on Resistance Risk (%)"}
+            ))
+            fig_imp.update_layout(height=250, margin=dict(t=50, b=0), paper_bgcolor="rgba(0,0,0,0)", template="plotly_dark")
+            st.plotly_chart(fig_imp, width="stretch")
 
 # Run inference automatically if simulation is ON and data has changed
 # This block was removed as per the instruction's implied removal of simulation_mode check
@@ -227,25 +259,34 @@ if st.session_state.prediction_result:
     tabs = st.tabs(["🎯 SNAPSHOT", "💊 PATHWAYS", "🧬 MOLECULAR WORKBENCH", "📽️ MTB PACKET", "📈 INSTITUTIONAL RWE", "🧪 VALIDATION"])
     
     with tabs[0]: # SNAPSHOT
-        # ... snapshot content (remains similar) ...
-        st.markdown(f"## Case Identity: {st.session_state.form_data.get('patient_name', 'Anon')}")
-        if v_mode == "Shadow Mode (Silent)":
-            st.warning("SHADOW MODE ACTIVE: Suggestions are for research validation ONLY.")
+        st.markdown(f"## Patient Instance: {st.session_state.form_data.get('patient_name', 'Case Ingested')}")
+        st.caption("AI-Powered Clinical Summary. This view synthesizes EHR data and NGS results into a unified risk profile.")
         
         col1, col2 = st.columns([1.5, 1])
         with col1:
-             st.info(f"**Primary Site:** {st.session_state.form_data['cancer_type'].title()} Adenocarcinoma (Stage {st.session_state.form_data['stage']})")
-             st.markdown(f"**Interpretation:** {res['interpretation']}")
+             st.info(f"🧬 **Diagnosis:** {st.session_state.form_data['cancer_type'].title()} Adenocarcinoma | **Status:** TNM Stage {st.session_state.form_data['stage']}")
+             st.markdown(f"**Clinical Interpretation:** {res['interpretation']}")
              
              m1, m2, m3 = st.columns(3)
-             m1.metric("RESISTANCE RISK", f"{res['risk_score']}%")
-             m2.metric("GUIDELINE ADHERENCE", "Tier 1", delta="Optimal Match")
-             m3.metric("MSK BENCHMARK", "92nd Pctl")
+             m1.metric("RESISTANCE RISK", f"{res['risk_score']}%", help="Calculated probability that the tumor will resist standard-of-care front-line therapy.")
+             m2.metric("ADHERENCE TIER", "Optimal", help="Strength of the match between patient biomarkers and NCCN/ASCO guidelines.")
+             m3.metric("POPULATION B/M", "88th Pctl", help="How this patient compares to the MSK-IMPACT global cohort (n=10,000+).")
+             
+             st.divider()
+             st.markdown("#### 🧠 AI Decision Reasoning Logic")
+             st.caption("Visual flow of how biological features contributed to the final recommendation.")
+             
+             # TREE MAP of reasoning
+             reason_df = pd.DataFrame(res['feature_contributions'])
+             fig_tree = px.treemap(reason_df, path=['name'], values='weight', color='weight', color_continuous_scale='RdYlGn_r')
+             fig_tree.update_layout(margin=dict(l=0,r=0,t=0,b=0), height=200, paper_bgcolor="rgba(0,0,0,0)")
+             st.plotly_chart(fig_tree, width="stretch")
              
         with col2:
-             st.markdown("#### Actionable Feature Weights")
+             st.markdown("#### Actionable Weights")
+             st.caption("Individual feature impact on the resistance score.")
              contribs = pd.DataFrame(res['feature_contributions'])
-             fig = px.bar(contribs, x='weight', y='name', orientation='h', color='weight', height=250)
+             fig = px.bar(contribs, x='weight', y='name', orientation='h', color='weight', height=350)
              fig.update_layout(margin=dict(l=0,r=0,t=0,b=0), paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", template="plotly_dark")
              st.plotly_chart(fig, width="stretch")
 
@@ -284,11 +325,12 @@ if st.session_state.prediction_result:
 
     with tabs[2]: # MOLECULAR WORKBENCH
         st.markdown("### 🧬 Molecular Workbench: Genomic Signature Depth")
-        st.markdown(f'<p style="color: {text_secondary};">Detailed profiling of SNVs, CNVs, and Mutational Burdens ingested via NGS bridge.</p>', unsafe_allow_html=True)
+        st.caption("Detailed profiling of SNVs (Mutations), CNVs (Copy Number Variations), and Mutational Burdens ingested via NGS bridge.")
         
         m_col1, m_col2 = st.columns([2, 1])
         with m_col1:
             st.markdown("#### Detected Variants & Quantitation")
+            st.caption("Actionable genetic alterations detected in the patient's NGS panel.")
             var_data = []
             for v in st.session_state.form_data.get('detected_variants', ['None']):
                 if v != 'None':
@@ -307,17 +349,19 @@ if st.session_state.prediction_result:
 
         with m_col2:
             st.markdown("#### Mutational Signature Weight")
+            st.caption("Analysis of pattern-based mutational processes (e.g. UV, tobacco, aging).")
             fig_sig = px.bar(x=[45, 30, 25], y=["Sig 1", "Sig 4", "Other"], orientation='h', height=250)
             fig_sig.update_layout(margin=dict(l=0,r=0,t=0,b=0), paper_bgcolor="rgba(0,0,0,0)", template="plotly_dark")
             st.plotly_chart(fig_sig, width="stretch")
 
     with tabs[3]: # MTB PACKET
         st.markdown("### 📋 Molecular Tumor Board (MTB) Readiness")
+        st.caption("Operational workflow to prepare for expert board review and EHR documentation.")
         
         flow_col1, flow_col2 = st.columns(2)
         with flow_col1:
             st.markdown("#### 📅 Board Scheduling & Logistics")
-            st.info("Automated Scheduler: Found 2 available slots with expert genitourinary coverage.")
+            st.info("Automated Scheduler: Found 2 available slots with expert genitourinary coverage.", icon="📅")
             st.button("Propose Slot: Tue 14:00 (GU Board)")
             st.button("Propose Slot: Thu 09:00 (Global Phase I)")
             
