@@ -46,6 +46,20 @@
                             "patient_explanation": "A combination of immunotherapy to boost your immune system and traditional chemotherapy."
                         }
                     ]
+                },
+                "ALK": {
+                    "regimens": [
+                        {
+                            "name": "Alectinib (Alecensa®)",
+                            "type": "ALK Inhibitor",
+                            "line": "1st-Line",
+                            "guideline_tier": "NCCN Preferred",
+                            "evidence_level": "Level 1A",
+                            "regulatory_status": "FDA Approved",
+                            "rationale": "Superior CNS penetration and PFS vs Crizotinib (ALEX Trial).",
+                            "patient_explanation": "A highly potent pill that targets the ALK fusion driving your cancer growth."
+                        }
+                    ]
                 }
             }
         },
@@ -78,6 +92,55 @@
                             "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34081729/",
                             "rationale": "Targets DNA repair deficiency (OlympiA/OlympiAD).",
                             "patient_explanation": "A medication that prevents cancer cells with DNA repair problems from fixing themselves, leading to cell death."
+                        }
+                    ]
+                }
+            }
+        },
+        "prostate": {
+            "biomarkers": {
+                "BRCA1/2": {
+                    "regimens": [
+                        {
+                            "name": "Olaparib + Abiraterone",
+                            "type": "PARP + AR Inhibitor",
+                            "line": "1st-Line mCRPC",
+                            "guideline_tier": "NCCN Category 1",
+                            "evidence_level": "Level 1A",
+                            "regulatory_status": "FDA Approved",
+                            "rationale": "PROpel trial showed significant rPFS benefit for dual blockade in BRCAm.",
+                            "patient_explanation": "A combination of a PARP inhibitor and hormone therapy to block two different growth pathways in your cancer."
+                        }
+                    ]
+                },
+                "PTEN_Loss": {
+                    "regimens": [
+                        {
+                            "name": "Ipatasertib + Abiraterone",
+                            "type": "AKT Inhibitor + AR",
+                            "line": "Clinical Trial / 2nd-Line",
+                            "guideline_tier": "Investigational",
+                            "evidence_level": "Level 2B",
+                            "rationale": "PTEN loss activates PI3K/AKT pathway; IPATential150 trial data.",
+                            "patient_explanation": "A combination targeting the AKT pathway which often becomes active when PTEN is lost."
+                        }
+                    ]
+                }
+            }
+        },
+        "ovarian": {
+            "biomarkers": {
+                "BRCA_Mutant": {
+                    "regimens": [
+                        {
+                            "name": "Niraparib (Zejula®)",
+                            "type": "PARP Inhibitor",
+                            "line": "Maintenance",
+                            "guideline_tier": "NCCN Category 1",
+                            "evidence_level": "Level 1A",
+                            "regulatory_status": "FDA Approved",
+                            "rationale": "Significant PFS benefit in first-line maintenance (PRIMA trial).",
+                            "patient_explanation": "Maintenance therapy to keep the cancer from coming back by blocking DNA repair."
                         }
                     ]
                 }
