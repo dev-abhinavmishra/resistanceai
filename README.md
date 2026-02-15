@@ -7,7 +7,8 @@ ResistanceAI is a high-fidelity clinical decision support platform designed for 
 - **Molecular Workbench**: Deep genomic profiling including SNVs, CNVs, and Mutational Signatures.
 - **Closed-Loop RWE**: Validated institutional dataset (n=850) showing clear survival advantages for AI-adhered decisions.
 - **Operational MTB**: Automated board scheduling, packet generation, and EHR SOAP note export.
-- **Regulatory Readiness**: 3-Phase validation pathway (Retrospective, Shadow, Pilot) and HIPAA-compliant audit logs.
+- [x] **Trial Discovery Engine (Live)**: Integration with ClinicalTrials.gov (v2 API) for real-time, biomarker-linked study mapping (50+ trials per search).
+- [x] **Regulatory Readiness**: 3-Phase validation pathway (Retrospective, Shadow, Pilot) and HIPAA-compliant audit logs.
 
 ## 🛠️ Local Setup
 1. Clone the repository and navigate to the root directory.

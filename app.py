@@ -224,8 +224,20 @@ with st.sidebar:
 
     with st.expander("Scenario Stress Test (What-If Analysis)", expanded=False):
         st.caption("Change parameters to see how the clinical risk score responds in real-time.")
-        p_site = st.selectbox("Simulate Cancer Site", ["lung", "breast", "prostate", "colorectal", "ovarian"], 
-                              index=["lung", "breast", "prostate", "colorectal", "ovarian"].index(st.session_state.form_data['cancer_type']),
+        if  hasattr(core_predictor, 'kb') and 'cancer_types' in core_predictor.kb:
+            supported_types = list(core_predictor.kb['cancer_types'].keys())
+        else:
+             # Fallback if KB not loaded
+            supported_types = ["lung", "breast", "prostate", "colorectal", "ovarian", "melanoma"]
+
+        current_type = st.session_state.form_data['cancer_type']
+        try:
+             type_index = supported_types.index(current_type)
+        except ValueError:
+             type_index = 0
+             
+        p_site = st.selectbox("Simulate Cancer Site", supported_types, 
+                              index=type_index,
                               help="Different cancer types have different biological baseline resistances.")
         p_age = st.number_input("Simulate Diagnostic Age", 18, 120, st.session_state.form_data['age_at_diagnosis'], help="Age can impact tolerance to escalated regimens.")
         p_stage = st.select_slider("Simulate TNM Stage", options=['I', 'II', 'III', 'IV'], value=st.session_state.form_data['stage'], help="Advanced stages generally correlate with higher baseline genomic instability.")
