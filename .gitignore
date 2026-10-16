@@ -7,8 +7,9 @@ env/
 venv/
 ENV/
 
-# Streamlit
-.streamlit/
+# Streamlit — ignore secrets/local config, but keep the checked-in theme
+.streamlit/*
+!.streamlit/config.toml
 
 # OS
 .DS_Store
@@ -35,3 +36,6 @@ backend/artifacts/case_queue.json
 
 # Local runtime logs
 *.log
+
+# Submission cover asset — kept locally for the app-challenge upload, not in git
+cover_photo_600x800.jpg

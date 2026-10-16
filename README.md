@@ -85,7 +85,26 @@ python backend/models/train_v2.py         # -> backend/artifacts/
 # 5. run
 streamlit run app.py                       # UI on :8501
 python backend/main.py                     # REST API on :5000 (/health /predict /model/info /cohort/query)
+
+# 6. tests — pure-logic layer (no corpus or model artifact needed)
+python -m unittest discover -s tests -v
 ```
+
+## Deploy
+
+**Streamlit Community Cloud** — point the app at `app.py` from a fork/clone of
+this repo; `requirements.txt` + `.streamlit/config.toml` are already set up.
+Because the trained weights and corpus are licensed derivatives (see
+`DATA_SOURCES.md`), a clean checkout boots to the landing page with inference
+disabled — deploy a model artifact generated from steps 2–4 above via
+`RESISTANCEAI_MODEL_DIR`/`RESISTANCEAI_DATA_DIR` mounts, or run the trained
+model behind `backend/main.py` and treat Streamlit as the demo front-end.
+
+**Docker** — see the `RESISTANCEAI_MODEL_DIR`/`RESISTANCEAI_DATA_DIR` mount
+example under Notes below.
+
+**Configuration** — all runtime settings are environment variables; see
+`.env.example`.
 
 **Notes**
 
