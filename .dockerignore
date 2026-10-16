@@ -1,0 +1,27 @@
+.git
+.venv
+__pycache__
+**/__pycache__
+*.pyc
+.env
+
+# Raw study data + derived corpus are NOT baked into the image
+# (CC BY-NC-ND for CHORD; regenerate via backend/models/ingest_v2.py)
+msk_chord_2024
+msk_impact_2017
+backend/data
+
+# Trained weights are a CHORD derivative (CC BY-NC-ND) — do not bake into a
+# distributable image. Mount licensed artifacts at runtime instead and point
+# RESISTANCEAI_MODEL_DIR at them (default: backend/artifacts).
+backend/artifacts/resistance_model_v2.pkl
+
+# Runtime artifacts
+backend/artifacts/audit_log.json
+backend/artifacts/case_archive.json
+backend/artifacts/patient_outcomes.json
+backend/artifacts/shadow_log.json
+backend/artifacts/case_queue.json
+
+# Local runtime logs
+*.log

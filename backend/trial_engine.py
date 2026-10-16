@@ -21,15 +21,27 @@ class ClinicalTrialEngine:
         if cache_key in self.cache:
             return self.cache[cache_key]
 
-        # Prepare condition query
-        # Map frontend types to API friendly terms if necessary
+        # Map canonical cancer types to ClinicalTrials.gov condition terms
         site_map = {
-            "colorectal": "Colorectal Cancer",
             "lung": "Lung Cancer",
             "breast": "Breast Cancer",
+            "colorectal": "Colorectal Cancer",
             "prostate": "Prostate Cancer",
             "ovarian": "Ovarian Cancer",
-            "melanoma": "Melanoma"
+            "melanoma": "Melanoma",
+            "pancreatic": "Pancreatic Cancer",
+            "bladder": "Urothelial Carcinoma",
+            "renal": "Renal Cell Carcinoma",
+            "cns": "Brain Tumor",
+            "esophagogastric": "Esophagogastric Cancer",
+            "endometrial": "Endometrial Cancer",
+            "sarcoma": "Sarcoma",
+            "head_neck": "Head and Neck Cancer",
+            "hepatobiliary": "Hepatobiliary Cancer",
+            "thyroid": "Thyroid Cancer",
+            "cervical": "Cervical Cancer",
+            "mesothelioma": "Mesothelioma",
+            "other": "Solid Tumor",
         }
         condition = site_map.get(site.lower(), site)
         

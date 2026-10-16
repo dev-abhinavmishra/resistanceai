@@ -16,3 +16,22 @@ Thumbs.db
 
 # Backend Artifacts (Optional: keeping for demo but usually ignored)
 # backend/artifacts/*.json
+
+# License-restricted / regenerable data (see DATA_SOURCES.md)
+msk_chord_2024/
+backend/data/
+
+# Trained model artifact — a derivative of the CC BY-NC-ND CHORD cohort.
+# Kept out of git for the same reason as the raw data; regenerate via
+# backend/models/train_v2.py. Do not redistribute.
+backend/artifacts/resistance_model_v2.pkl
+
+# Runtime artifacts (recreated at runtime, not source)
+backend/artifacts/audit_log.json
+backend/artifacts/case_archive.json
+backend/artifacts/patient_outcomes.json
+backend/artifacts/shadow_log.json
+backend/artifacts/case_queue.json
+
+# Local runtime logs
+*.log

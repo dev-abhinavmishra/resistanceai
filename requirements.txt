@@ -1,10 +1,15 @@
 pandas
 numpy
-scikit-learn
-joblib
-python-dotenv
-streamlit>=1.40.0
+# Pin to the artifact's training major/minor — pickled HGB/isotonic estimators
+# are not guaranteed loadable across sklearn minor versions (the predictor
+# also warns on mismatch via artifact meta.sklearn_version).
+scikit-learn>=1.9.1,<1.10
+# >=1.51: width="stretch" on buttons/charts/dataframes landed across the
+# AdvancedLayouts rollout (plotly_chart's width param shipped in 1.51.0).
+streamlit>=1.51.0
 altair<5
 plotly
 requests
-idna
+pyarrow
+flask
+flask-cors

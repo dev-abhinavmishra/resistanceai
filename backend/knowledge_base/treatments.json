@@ -1,202 +1,152 @@
 {
-    "cancer_types": {
-        "lung": {
-            "biomarkers": {
-                "EGFR": {
-                    "regimens": [
-                        {
-                            "name": "Osimertinib (Tagrisso®)",
-                            "type": "Targeted TKI",
-                            "line": "1st-Line",
-                            "guideline_tier": "NCCN Category 1",
-                            "evidence_level": "Level 1A",
-                            "regulatory_status": "FDA Approved",
-                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29151359/",
-                            "rationale": "Superior PFS vs older TKIs. Standard of care for EGFR+ NSCLC.",
-                            "patient_explanation": "A targeted pill that blocks the growth signals from the EGFR mutation in your tumor."
-                        }
-                    ]
-                },
-                "KRAS_G12C": {
-                    "regimens": [
-                        {
-                            "name": "Sotorasib (Lumakras®)",
-                            "type": "KRAS Inhibitor",
-                            "line": "2nd-Line",
-                            "guideline_tier": "NCCN Category 2A",
-                            "evidence_level": "Level 2A",
-                            "regulatory_status": "Accelerated Approval",
-                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34096052/",
-                            "rationale": "Targets specific G12C mutation. Used in patients who progressed on chemo/IO.",
-                            "patient_explanation": "A pill designed specifically to lock onto and 'turn off' the KRAS protein that drives cancer growth."
-                        }
-                    ]
-                },
-                "TMB-H": {
-                    "regimens": [
-                        {
-                            "name": "Pembrolizumab + Chemo",
-                            "type": "Immunotherapy Combo",
-                            "line": "1st-Line",
-                            "guideline_tier": "NCCN Category 1",
-                            "evidence_level": "Level 1A",
-                            "regulatory_status": "FDA Approved",
-                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30208455/",
-                            "rationale": "Synergistic effect in tumors with high mutational burden.",
-                            "patient_explanation": "A combination of immunotherapy to boost your immune system and traditional chemotherapy."
-                        }
-                    ]
-                },
-                "ALK": {
-                    "regimens": [
-                        {
-                            "name": "Alectinib (Alecensa®)",
-                            "type": "ALK Inhibitor",
-                            "line": "1st-Line",
-                            "guideline_tier": "NCCN Preferred",
-                            "evidence_level": "Level 1A",
-                            "regulatory_status": "FDA Approved",
-                            "rationale": "Superior CNS penetration and PFS vs Crizotinib (ALEX Trial).",
-                            "patient_explanation": "A highly potent pill that targets the ALK fusion driving your cancer growth."
-                        }
-                    ]
-                }
-            }
-        },
-        "breast": {
-            "biomarkers": {
-                "HER2+": {
-                    "regimens": [
-                        {
-                            "name": "Trastuzumab + Pertuzumab",
-                            "type": "Dual Antibody Blockade",
-                            "line": "1st-Line",
-                            "guideline_tier": "ASCO/NCCN Preferred",
-                            "evidence_level": "Level 1A",
-                            "regulatory_status": "FDA Approved",
-                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/25730302/",
-                            "rationale": "CLEOPATRA trial showed significant OS benefit for dual HER2 targeting.",
-                            "patient_explanation": "Two intravenous medications that work together to stick to the outside of HER2+ cancer cells and signal the immune system to destroy them."
-                        }
-                    ]
-                },
-                "HRD_Positive": {
-                    "regimens": [
-                        {
-                            "name": "Olaparib (Lynparza®)",
-                            "type": "PARP Inhibitor",
-                            "line": "Adjuvant/Metastatic",
-                            "guideline_tier": "NCCN Category 1",
-                            "evidence_level": "Level 1A",
-                            "regulatory_status": "FDA Approved",
-                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34081729/",
-                            "rationale": "Targets DNA repair deficiency (OlympiA/OlympiAD).",
-                            "patient_explanation": "A medication that prevents cancer cells with DNA repair problems from fixing themselves, leading to cell death."
-                        }
-                    ]
-                }
-            }
-        },
-        "prostate": {
-            "biomarkers": {
-                "BRCA1/2": {
-                    "regimens": [
-                        {
-                            "name": "Olaparib + Abiraterone",
-                            "type": "PARP + AR Inhibitor",
-                            "line": "1st-Line mCRPC",
-                            "guideline_tier": "NCCN Category 1",
-                            "evidence_level": "Level 1A",
-                            "regulatory_status": "FDA Approved",
-                            "rationale": "PROpel trial showed significant rPFS benefit for dual blockade in BRCAm.",
-                            "patient_explanation": "A combination of a PARP inhibitor and hormone therapy to block two different growth pathways in your cancer."
-                        }
-                    ]
-                },
-                "PTEN_Loss": {
-                    "regimens": [
-                        {
-                            "name": "Ipatasertib + Abiraterone",
-                            "type": "AKT Inhibitor + AR",
-                            "line": "Clinical Trial / 2nd-Line",
-                            "guideline_tier": "Investigational",
-                            "evidence_level": "Level 2B",
-                            "rationale": "PTEN loss activates PI3K/AKT pathway; IPATential150 trial data.",
-                            "patient_explanation": "A combination targeting the AKT pathway which often becomes active when PTEN is lost."
-                        }
-                    ]
-                }
-            }
-        },
-        "ovarian": {
-            "biomarkers": {
-                "BRCA_Mutant": {
-                    "regimens": [
-                        {
-                            "name": "Niraparib (Zejula®)",
-                            "type": "PARP Inhibitor",
-                            "line": "Maintenance",
-                            "guideline_tier": "NCCN Category 1",
-                            "evidence_level": "Level 1A",
-                            "regulatory_status": "FDA Approved",
-                            "rationale": "Significant PFS benefit in first-line maintenance (PRIMA trial).",
-                            "patient_explanation": "Maintenance therapy to keep the cancer from coming back by blocking DNA repair."
-                        }
-                    ]
-                }
-            }
-        },
-        "colorectal": {
-            "biomarkers": {
-                "BRAF_V600E": {
-                    "regimens": [
-                        {
-                            "name": "Encorafenib + Cetuximab",
-                            "type": "Targeted Combo",
-                            "line": "2nd-Line",
-                            "guideline_tier": "NCCN Category 1",
-                            "evidence_level": "Level 1A",
-                            "regulatory_status": "FDA Approved",
-                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31566309/",
-                            "rationale": "BEACON CRC trial demonstrated survival benefit for BRAF/EGFR inhibition.",
-                            "patient_explanation": "A combination therapy designed to shut down the BRAF growth pathway which is often resistant to chemotherapy in CRC."
-                        }
-                    ]
-                }
-            }
-        },
-        "melanoma": {
-            "biomarkers": {
-                "BRAF_V600": {
-                    "regimens": [
-                        {
-                            "name": "Dabrafenib + Trametinib",
-                            "type": "BRAF/MEK Inhibitor",
-                            "line": "1st-Line",
-                            "guideline_tier": "NCCN Preferred",
-                            "evidence_level": "Level 1A",
-                            "regulatory_status": "FDA Approved",
-                            "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31166680/",
-                            "rationale": "COMBI-d/v trials showed durable responses in BRAF+ cohorts.",
-                            "patient_explanation": "A two-pill daily regimen that targets the BRAF mutation common in melanoma."
-                        }
-                    ]
-                }
-            }
-        }
+  "schema_version": "v9.0",
+  "cancer_types": {
+    "lung": {
+      "biomarkers": {
+        "EGFR": {"regimens": [{"name": "Osimertinib (Tagrisso)", "type": "Targeted TKI", "line": "1st-Line", "guideline_tier": "NCCN Category 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29151359/", "rationale": "FLAURA: superior PFS/OS vs 1st-gen TKIs. Standard for EGFR sensitizing mutations.", "resistance_note": "Watch MET amplification, ERBB2 amplification, RB1+TP53 (SCLC transformation risk).", "patient_explanation": "A daily pill that blocks the mutated EGFR growth signal."}]},
+        "KRAS": {"regimens": [{"name": "Sotorasib or Adagrasib (G12C)", "type": "KRAS-G12C Inhibitor", "line": "2nd-Line", "guideline_tier": "NCCN 2A", "evidence_level": "OncoKB 2", "regulatory_status": "FDA Approved (G12C only)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34096052/", "rationale": "Covalent G12C inhibitors; CodeBreaK 200 / KRYSTAL-12 confirm PFS benefit post-chemo-IO.", "resistance_note": "Adaptive RTK rebound (MET/EGFR/RET amplification) and STK11/KEAP1 co-mutation blunt durability.", "patient_explanation": "A targeted pill for the specific KRAS G12C variant, if present."}]},
+        "ALK": {"regimens": [{"name": "Lorlatinib (Lorbrena) or Alectinib", "type": "ALK TKI", "line": "1st-Line", "guideline_tier": "NCCN Category 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30653588/", "rationale": "CROWN/ALEX: deep CNS-active responses for ALK fusions.", "resistance_note": "Compound ALK mutations and TP53 co-alteration shorten duration.", "patient_explanation": "A targeted pill blocking the ALK fusion protein driving the tumor."}]},
+        "ROS1": {"regimens": [{"name": "Crizotinib or Repotrectinib", "type": "ROS1 TKI", "line": "1st-Line", "guideline_tier": "NCCN 2A", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38345981/", "rationale": "TRIDENT-1: repotrectinib active in TKI-naive and resistant ROS1+ NSCLC.", "patient_explanation": "A targeted pill blocking the ROS1 fusion oncoprotein."}]},
+        "RET": {"regimens": [{"name": "Selpercatinib (Retevmo) or Pralsetinib", "type": "RET TKI", "line": "1st-Line", "guideline_tier": "NCCN 2A", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32855183/", "rationale": "LIBRETTO-001: high intracranial ORR in RET-fusion lung cancer.", "patient_explanation": "A targeted drug for RET-fusion positive tumors."}]},
+        "MET": {"regimens": [{"name": "Capmatinib or Tepotinib; Amivantamab (exon14)", "type": "MET Inhibitor / Bispecific", "line": "1st-2nd Line", "guideline_tier": "NCCN 2A", "evidence_level": "OncoKB 1-2", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32877583/", "rationale": "GEOMETRY/VISION: MET exon14 skipping and high-level MET amplification respond to MET TKIs; amivantamab approved for exon20 insertions and post-osimertinib settings.", "patient_explanation": "Therapy targeting abnormal MET signaling."}]},
+        "BRAF": {"regimens": [{"name": "Dabrafenib + Trametinib", "type": "BRAF+MEK Inhibitor", "line": "1st-2nd Line", "guideline_tier": "NCCN 2A", "evidence_level": "OncoKB 2", "regulatory_status": "FDA Approved (V600E)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/27080216/", "rationale": "Dual blockade controls BRAF V600E NSCLC; reduces paradoxical MAPK activation.", "patient_explanation": "Two targeted pills that shut down the BRAF growth pathway."}]},
+        "NTRK1": {"regimens": [{"name": "Larotrectinib or Repotrectinib", "type": "TRK Inhibitor", "line": "Any line", "guideline_tier": "Site-Agnostic", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29466156/", "rationale": "Histology-agnostic approval for NTRK fusions with ~75% ORR.", "patient_explanation": "A targeted drug active against NTRK gene fusions."}]},
+        "ERBB2": {"regimens": [{"name": "Trastuzumab Deruxtecan (Enhertu)", "type": "HER2 ADC", "line": "2nd-Line", "guideline_tier": "NCCN 2A", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved (HER2-mutant NSCLC + pan-tumor IHC3+)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35320646/", "rationale": "DESTINY-Lung01/02: 55% ORR in HER2-mutant NSCLC; DESTINY-PanTumor02 led to site-agnostic approval.", "patient_explanation": "An antibody-drug conjugate delivering chemotherapy directly to HER2+ cells."}]},
+        "TMB-H": {"regimens": [{"name": "Pembrolizumab (+/- chemotherapy)", "type": "Checkpoint Inhibitor", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "Level 1", "regulatory_status": "FDA Approved (TMB>=10)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33212421/", "rationale": "KEYNOTE-158/189: TMB-H predicts pembrolizumab benefit.", "resistance_note": "STK11/KEAP1 co-mutations predict IO-refractory behavior despite TMB-H.", "patient_explanation": "Immunotherapy that helps your immune system attack the tumor."}]}
+      }
     },
-    "universal_biomarkers": {
-        "MSI-H": [
-            {
-                "name": "Pembrolizumab (Keytruda®)",
-                "type": "Immune Checkpoint Blockade",
-                "line": "Pan-Cancer 2nd-Line+",
-                "guideline_tier": "FDA Site-Agnostic",
-                "evidence_level": "Level 1B",
-                "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28522730/",
-                "rationale": "First tissue-agnostic FDA approval based on KEYNOTE-177/158.",
-                "patient_explanation": "An immunotherapy that helps your immune system recognize and attack cancer cells that have 'micro-satellite' repair defects."
-            }
-        ]
+    "breast": {
+      "biomarkers": {
+        "ERBB2": {"regimens": [{"name": "Trastuzumab Deruxtecan; (1L: Pertuzumab+Trastuzumab+taxane)", "type": "HER2-directed", "line": "1st-2nd Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32439846/", "rationale": "DESTINY-Breast03: T-DXd doubled PFS vs T-DM1 in 2L HER2+.", "patient_explanation": "HER2-targeted therapy; T-DXd is the current preferred 2nd line."}]},
+        "PIK3CA": {"regimens": [{"name": "Alpelisib + Fulvestrant; or Capivasertib + Fulvestrant", "type": "PI3K/AKT Inhibitor", "line": "2nd-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31091374/", "rationale": "SOLAR-1/CAPItello-291: PIK3CA/AKT-pathway blockade post-CDK4/6i.", "resistance_note": "PTEN loss favors capivasertib (AKT inhibitor) over alpelisib.", "patient_explanation": "Targeted therapy blocking the overactive PI3K growth switch."}]},
+        "ESR1": {"regimens": [{"name": "Elacestrant (Orserdu) or Fulvestrant", "type": "SERD", "line": "2nd-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36596481/", "rationale": "EMERALD: elacestrant superior to SoC in ESR1-mutant post-CDK4/6i disease.", "patient_explanation": "An oral estrogen-receptor degrader that works despite ESR1 resistance mutations."}]},
+        "BRCA1": {"regimens": [{"name": "Olaparib or Talazoparib", "type": "PARP Inhibitor", "line": "2nd-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved (gBRCA HER2-)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28578601/", "rationale": "OlympiAD/EMBRACA: PARPi superior to chemo in germline BRCA HER2- metastatic breast cancer.", "patient_explanation": "A pill exploiting the tumor's DNA-repair weakness."}]},
+        "BRCA2": {"regimens": [{"name": "Olaparib or Talazoparib", "type": "PARP Inhibitor", "line": "2nd-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28578601/", "rationale": "Same OlympiAD/EMBRACA evidence base as BRCA1.", "patient_explanation": "A pill exploiting the tumor's DNA-repair weakness."}]},
+        "HRD_Positive": {"regimens": [{"name": "Platinum (Carboplatin) or PARP inhibitor", "type": "DNA-damaging / PARPi", "line": "2nd-Line+", "guideline_tier": "NCCN 2A", "evidence_level": "Level 2", "regulatory_status": "Approved per biomarker", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26472706/", "rationale": "TNT/PrECOG: HRD predicts platinum sensitivity.", "patient_explanation": "Therapy exploiting defective DNA repair in the tumor."}]},
+        "HER2+": {"regimens": [{"name": "Trastuzumab Deruxtecan (Enhertu)", "type": "HER2 ADC", "line": "2nd-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32439846/", "rationale": "DESTINY-Breast03.", "patient_explanation": "HER2-targeted antibody-drug conjugate."}]}
+      }
+    },
+    "colorectal": {
+      "biomarkers": {
+        "KRAS": {"regimens": [{"name": "Adagrasib or Sotorasib + Cetuximab (G12C)", "type": "KRAS-G12C + anti-EGFR", "line": "2nd-3rd Line", "guideline_tier": "NCCN 2A", "evidence_level": "OncoKB 2", "regulatory_status": "FDA Approved (G12C combo)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38128519/", "rationale": "KRYSTAL-1/CodeBreaK-300: EGFR feedback requires dual blockade in CRC.", "resistance_note": "Acquired KRAS amplification/secondary mutations and RTK activation limit durability.", "patient_explanation": "Two-drug targeted combination for the KRAS G12C mutation."}]},
+        "BRAF": {"regimens": [{"name": "Encorafenib + Cetuximab (+/- Binimetinib)", "type": "BRAF + anti-EGFR", "line": "2nd-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved (V600E)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31566009/", "rationale": "BEACON CRC: doublet/triplet improves OS in BRAF V600E mCRC.", "patient_explanation": "Targeted combination for BRAF-mutant colorectal cancer."}]},
+        "ERBB2": {"regimens": [{"name": "Trastuzumab + Tucatinib or T-DXd", "type": "HER2-directed", "line": "3rd-Line", "guideline_tier": "NCCN 2A", "evidence_level": "OncoKB 2", "regulatory_status": "FDA Approved (tucatinib combo)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31831880/", "rationale": "MOUNTAINEER/DESTINY-CRC01: HER2-amplified RAS-WT CRC responds to HER2 blockade.", "patient_explanation": "HER2-targeted therapy for HER2-amplified tumors."}]},
+        "TMB-H": {"regimens": [{"name": "Pembrolizumab (or Nivolumab +/- Ipilimumab)", "type": "Checkpoint Inhibitor", "line": "1st-Line (MSI-H/dMMR)", "guideline_tier": "NCCN 1", "evidence_level": "Level 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33212421/", "rationale": "KEYNOTE-177: pembrolizumab doubled PFS vs chemo in MSI-H mCRC.", "patient_explanation": "Immunotherapy effective in repair-deficient (MSI-high) tumors."}]},
+        "BRAF_V600E": {"regimens": [{"name": "Encorafenib + Cetuximab", "type": "BRAF + anti-EGFR", "line": "2nd-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31566009/", "rationale": "BEACON CRC.", "patient_explanation": "Targeted combination for BRAF V600E colorectal cancer."}]}
+      }
+    },
+    "prostate": {
+      "biomarkers": {
+        "BRCA1": {"regimens": [{"name": "Olaparib (+Abiraterone) or Rucaparib", "type": "PARP Inhibitor", "line": "post-ARPI", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32343890/", "rationale": "PROfound/TRITON3: PARPi superior to ARPI switch in HRR-mutant mCRPC.", "patient_explanation": "A pill exploiting DNA-repair weakness in BRCA-mutant prostate cancer."}]},
+        "BRCA2": {"regimens": [{"name": "Olaparib (+Abiraterone) or Rucaparib", "type": "PARP Inhibitor", "line": "post-ARPI", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32343890/", "rationale": "PROfound: strongest benefit in BRCA2 subgroup.", "patient_explanation": "A pill exploiting DNA-repair weakness in BRCA-mutant prostate cancer."}]},
+        "ATM": {"regimens": [{"name": "Olaparib (emerging) / ATR inhibitor trials", "type": "PARP/ATR Inhibitor", "line": "post-ARPI", "guideline_tier": "NCCN 2B", "evidence_level": "OncoKB 3", "regulatory_status": "Approved in HRR panels", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32343890/", "rationale": "ATM-altered mCRPC shows intermediate PARPi benefit.", "patient_explanation": "DNA-repair targeted therapy."}]},
+        "PTEN": {"regimens": [{"name": "AKT-pathway agents (ipatasertib trials) + ARPI", "type": "AKT Inhibitor / ARPI", "line": "1st-2nd Line", "guideline_tier": "NCCN 2B", "evidence_level": "Level 2-3", "regulatory_status": "Investigational", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33328375/", "rationale": "IPATential150: AKT blockade improves rPFS in PTEN-loss mCRPC.", "patient_explanation": "Therapy targeting the PTEN-loss growth pathway."}]},
+        "BRCA1/2": {"regimens": [{"name": "Olaparib or Rucaparib", "type": "PARP Inhibitor", "line": "post-ARPI", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32343890/", "rationale": "PROfound/TRITON3.", "patient_explanation": "PARP inhibitor for DNA-repair-deficient prostate cancer."}]},
+        "PTEN_Loss": {"regimens": [{"name": "AKT pathway / trials", "type": "AKT Inhibitor", "line": "post-ARPI", "guideline_tier": "NCCN 2B", "evidence_level": "Level 3", "regulatory_status": "Investigational", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33328375/", "rationale": "PTEN loss sensitizes to AKT blockade.", "patient_explanation": "Targeted therapy for PTEN-deleted tumors."}]}
+      }
+    },
+    "ovarian": {
+      "biomarkers": {
+        "BRCA1": {"regimens": [{"name": "Olaparib/Niraparib maintenance", "type": "PARP Inhibitor", "line": "1L Maintenance", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30345884/", "rationale": "SOLO-1: durable benefit in BRCA-mutant advanced ovarian cancer.", "patient_explanation": "Maintenance pill that prevents the tumor from repairing DNA damage."}]},
+        "BRCA2": {"regimens": [{"name": "Olaparib/Niraparib maintenance", "type": "PARP Inhibitor", "line": "1L Maintenance", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30345884/", "rationale": "SOLO-1/PAOLA-1.", "patient_explanation": "Maintenance pill exploiting DNA-repair deficiency."}]},
+        "HRD_Positive": {"regimens": [{"name": "Niraparib or Olaparib+Bevacizumab maintenance", "type": "PARP Inhibitor", "line": "1L Maintenance", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32990663/", "rationale": "PAOLA-1/PRIMA: HRD predicts maintenance benefit.", "patient_explanation": "Maintenance therapy for DNA-repair-deficient tumors."}]},
+        "BRCA_Mutant": {"regimens": [{"name": "PARP inhibitor", "type": "PARPi", "line": "Maintenance", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30345884/", "rationale": "SOLO-1.", "patient_explanation": "PARP inhibitor maintenance."}]},
+        "FRa/FRalpha": {"regimens": [{"name": "Mirvetuximab Soravtansine (Elahere)", "type": "FRa ADC", "line": "2nd-Line+", "guideline_tier": "NCCN 2A", "evidence_level": "Level 2", "regulatory_status": "FDA Approved (FRa+ platinum-resistant)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36525301/", "rationale": "SORAYA/MIRASOL: FRa-high platinum-resistant ovarian cancer.", "patient_explanation": "Antibody-drug conjugate targeting folate receptor alpha."}]}
+      }
+    },
+    "melanoma": {
+      "biomarkers": {
+        "BRAF": {"regimens": [{"name": "Dabrafenib+Trametinib or Encorafenib+Binimetinib; or Nivo+Ipi", "type": "BRAF/MEK or dual-IO", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28859255/", "rationale": "DREAMseq: immunotherapy-first preferred for most; BRAF/MEK remains for rapid response need.", "patient_explanation": "Targeted doublet or immunotherapy depending on disease pace."}]},
+        "BRAF_V600": {"regimens": [{"name": "BRAF/MEK combination", "type": "BRAF/MEK", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28859255/", "rationale": "COMBI-v/coBRIM.", "patient_explanation": "Two targeted pills blocking BRAF signaling."}]},
+        "NF1": {"regimens": [{"name": "Immunotherapy +/- MEK trials", "type": "IO / MEKi", "line": "1st-Line", "guideline_tier": "NCCN 2A", "evidence_level": "Level 2", "regulatory_status": "Approved (IO)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28859255/", "rationale": "NF1-mutant melanoma is typically UV-high-TMB and IO-responsive.", "patient_explanation": "Immunotherapy favored in NF1-mutant melanoma."}]},
+        "KIT": {"regimens": [{"name": "Imatinib", "type": "KIT TKI", "line": "2nd-Line", "guideline_tier": "NCCN 2A", "evidence_level": "OncoKB 2", "regulatory_status": "FDA Approved (GIST; off-label melanoma)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23687346/", "rationale": "KIT-mutant mucosal/acral melanoma responds to KIT inhibitors.", "patient_explanation": "Targeted therapy for KIT-mutant melanoma."}]}
+      }
+    },
+    "pancreatic": {
+      "biomarkers": {
+        "BRCA1": {"regimens": [{"name": "Platinum + Olaparib maintenance (POLO)", "type": "PARP Inhibitor", "line": "Maintenance post-platinum", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved (gBRCA)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31157963/", "rationale": "POLO: olaparib maintenance after platinum response in gBRCA PDAC.", "patient_explanation": "Maintenance targeted therapy after responding to platinum chemo."}]},
+        "BRCA2": {"regimens": [{"name": "Platinum + Olaparib maintenance (POLO)", "type": "PARP Inhibitor", "line": "Maintenance post-platinum", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31157963/", "rationale": "POLO trial.", "patient_explanation": "Maintenance targeted therapy after platinum response."}]},
+        "KRAS": {"regimens": [{"name": "mFOLFIRINOX or Gem/Nab-paclitaxel; KRAS inhibitors in trials (G12C: adagrasib)", "type": "Chemo / KRASi trials", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "Level 1 (chemo)", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21561394/", "rationale": "KRAS-mutant PDAC remains chemotherapy-managed; G12C inhibitors emerging (KRYSTAL-1 PDAC cohort).", "patient_explanation": "Combination chemotherapy; targeted trials exist for KRAS G12C."}]},
+        "NRG1": {"regimens": [{"name": "Zenocutuzumab (Bizengri)", "type": "NRG1 Bispecific Antibody", "line": "Any line", "guideline_tier": "Site-Agnostic", "evidence_level": "Level 2", "regulatory_status": "FDA Approved (2024)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38839275/", "rationale": "eNRGy: bispecific HER2/HER3 blockade active in NRG1-fusion PDAC and NSCLC.", "patient_explanation": "A bispecific antibody for NRG1-fusion pancreatic cancer."}]},
+        "NTRK1": {"regimens": [{"name": "Larotrectinib", "type": "TRK Inhibitor", "line": "Any line", "guideline_tier": "Site-Agnostic", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29466156/", "rationale": "Site-agnostic NTRK approval; PDAC cohort enriched for fusions.", "patient_explanation": "Targeted therapy for NTRK-fusion tumors."}]}
+      }
+    },
+    "bladder": {
+      "biomarkers": {
+        "FGFR2": {"regimens": [{"name": "Erdafitinib (Balversa)", "type": "FGFR TKI", "line": "2nd-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31294873/", "rationale": "BLC2001/THOR: erdafitinib in FGFR2/3-altered urothelial cancer.", "patient_explanation": "Targeted pill for FGFR-altered bladder cancer."}]},
+        "FGFR3": {"regimens": [{"name": "Erdafitinib (Balversa)", "type": "FGFR TKI", "line": "2nd-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31294873/", "rationale": "THOR: OS benefit vs chemo in FGFR-altered UC.", "patient_explanation": "Targeted pill for FGFR3-altered bladder cancer."}]},
+        "TMB-H": {"regimens": [{"name": "Pembrolizumab or Enfortumab Vedotin + Pembro (1L)", "type": "IO / ADC+IO", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "Level 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38054530/", "rationale": "EV-302 practice-changing 1L standard; TMB-H enriches IO benefit.", "patient_explanation": "Immunotherapy combination, now first-line standard."}]}
+      }
+    },
+    "renal": {
+      "biomarkers": {
+        "VHL": {"regimens": [{"name": "VEGF-TKI + IO (e.g., Pembrolizumab+Axitinib); Belzutifan (VHL disease)", "type": "VEGF/HIF-2a axis", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "Level 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33079660/", "rationale": "KEYNOTE-426 era standards; HIF-2a inhibitor belzutifan approved for VHL-associated RCC.", "patient_explanation": "Combination therapy blocking tumor blood supply and boosting immunity."}]},
+        "PBRM1": {"regimens": [{"name": "IO-based combinations (favorable context)", "type": "Checkpoint-based", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "Level 2", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33079660/", "rationale": "PBRM1 loss correlates with enhanced IO benefit in ccRCC (biomarker, not approval).", "patient_explanation": "Immunotherapy combination."}]}
+      }
+    },
+    "esophagogastric": {
+      "biomarkers": {
+        "ERBB2": {"regimens": [{"name": "Trastuzumab + chemo (1L); T-DXd (2L)", "type": "HER2-directed", "line": "1st-2nd Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32817569/", "rationale": "ToGA + DESTINY-Gastric01: HER2+ gastric/GEJ benefit.", "patient_explanation": "HER2-targeted therapy."}]},
+        "CLDN18/CLDN18.2": {"regimens": [{"name": "Zolbetuximab + chemo (CLDN18.2+)", "type": "CLDN18.2 antibody", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "Level 1", "regulatory_status": "FDA Approved (2024)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37674068/", "rationale": "SPOTLIGHT/GLOW: first CLDN18.2-targeted approval.", "patient_explanation": "Antibody targeting a gastric-cancer surface protein."}]}
+      }
+    },
+    "endometrial": {
+      "biomarkers": {
+        "POLE": {"regimens": [{"name": "Checkpoint immunotherapy (ultramutated context)", "type": "Checkpoint Inhibitor", "line": "2nd-Line+", "guideline_tier": "NCCN 2A", "evidence_level": "Level 2", "regulatory_status": "FDA Approved (MSI-H/TMB-H context)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33212421/", "rationale": "POLE-ultramutated tumors have exceptional IO sensitivity (prognostic class in TCGA).", "patient_explanation": "Immunotherapy works especially well in POLE-mutant tumors."}]},
+        "TMB-H": {"regimens": [{"name": "Dostarlimab or Pembrolizumab (dMMR/MSI-H)", "type": "Checkpoint Inhibitor", "line": "1st-2nd Line", "guideline_tier": "NCCN 1", "evidence_level": "Level 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35172394/", "rationale": "GARNET/RUBY: dostarlimab high ORR in dMMR endometrial cancer.", "patient_explanation": "Immunotherapy for repair-deficient tumors."}]}
+      }
+    },
+    "hepatobiliary": {
+      "biomarkers": {
+        "IDH1": {"regimens": [{"name": "Ivosidenib (Tibsovo)", "type": "IDH1 Inhibitor", "line": "2nd-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32416072/", "rationale": "ClarIDHy: ivosidenib in IDH1-mutant cholangiocarcinoma.", "patient_explanation": "Targeted pill for IDH1-mutant bile-duct cancer."}]},
+        "FGFR2": {"regimens": [{"name": "Pemigatinib or Futibatinib", "type": "FGFR Inhibitor", "line": "2nd-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32203698/", "rationale": "FIGHT-202/FOENIX: FGFR2 fusions in intrahepatic cholangiocarcinoma.", "patient_explanation": "Targeted pill for FGFR2-fusion bile-duct cancer."}]},
+        "BRAF": {"regimens": [{"name": "Dabrafenib+Trametinib (tumor-agnostic V600E)", "type": "BRAF/MEK", "line": "2nd-Line", "guideline_tier": "NCCN 2A", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31566009/", "rationale": "ROAR basket trial.", "patient_explanation": "BRAF-targeted therapy."}]}
+      }
+    },
+    "cns": {
+      "biomarkers": {
+        "IDH1": {"regimens": [{"name": "Vorasidenib (grade 2 glioma)", "type": "IDH Inhibitor", "line": "Post-surgery", "guideline_tier": "NCCN 1", "evidence_level": "Level 1", "regulatory_status": "FDA Approved (2024)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37272516/", "rationale": "INDIGO: first targeted therapy for IDH-mutant low-grade glioma.", "patient_explanation": "Targeted pill for IDH-mutant glioma."}]},
+        "IDH2": {"regimens": [{"name": "Vorasidenib (grade 2 glioma)", "type": "IDH Inhibitor", "line": "Post-surgery", "guideline_tier": "NCCN 1", "evidence_level": "Level 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37272516/", "rationale": "INDIGO covers IDH1/2.", "patient_explanation": "Targeted pill for IDH-mutant glioma."}]},
+        "BRAF": {"regimens": [{"name": "Dabrafenib+Trametinib (pediatric LGG; tovorafenib)", "type": "BRAF/MEK or pan-RAF", "line": "Per age/grade", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1-2", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38100160/", "rationale": "FIREFLY-1: tovorafenib approved for BRAF-altered pediatric low-grade glioma.", "patient_explanation": "RAF-targeted therapy for BRAF-altered glioma."}]}
+      }
+    },
+    "sarcoma": {
+      "biomarkers": {
+        "KIT": {"regimens": [{"name": "Imatinib", "type": "KIT TKI", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved (GIST)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/12119405/", "rationale": "Transformative targeted therapy in KIT-mutant GIST.", "patient_explanation": "First-line targeted pill for KIT-mutant GIST."}]},
+        "PDGFRA": {"regimens": [{"name": "Imatinib (D842V-resistant -> Avapritinib)", "type": "PDGFRA TKI", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31961987/", "rationale": "NAVIGATOR: avapritinib for PDGFRA D842V GIST.", "patient_explanation": "Targeted therapy for PDGFRA-mutant GIST."}]}
+      }
+    },
+    "head_neck": {
+      "biomarkers": {
+        "TMB-H": {"regimens": [{"name": "Pembrolizumab +/- chemo", "type": "Checkpoint Inhibitor", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "Level 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30566564/", "rationale": "KEYNOTE-048: pembrolizumab first-line in R/M HNSCC.", "patient_explanation": "Immunotherapy first-line option."}]}
+      }
+    },
+    "thyroid": {
+      "biomarkers": {
+        "RET": {"regimens": [{"name": "Selpercatinib or Pralsetinib", "type": "RET TKI", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32855183/", "rationale": "LIBRETTO-001: RET-fusion/mutant thyroid cancer.", "patient_explanation": "Targeted pill for RET-altered thyroid cancer."}]},
+        "BRAF": {"regimens": [{"name": "Dabrafenib+Trametinib (anaplastic)", "type": "BRAF/MEK", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31566009/", "rationale": "Anaplastic thyroid carcinoma approval.", "patient_explanation": "BRAF-targeted combination."}]},
+        "NTRK1": {"regimens": [{"name": "Larotrectinib", "type": "TRK Inhibitor", "line": "Any line", "guideline_tier": "Site-Agnostic", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29466156/", "rationale": "Site-agnostic NTRK approval.", "patient_explanation": "Targeted therapy for NTRK-fusion tumors."}]}
+      }
+    },
+    "mesothelioma": {
+      "biomarkers": {
+        "BAP1": {"regimens": [{"name": "Nivolumab+Ipilimumab (1L); PARP/EZH2 trials", "type": "Dual-IO / trials", "line": "1st-Line", "guideline_tier": "NCCN 1", "evidence_level": "Level 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33056053/", "rationale": "CheckMate-743: dual-IO standard; BAP1 loss marks synthetic-lethal targets in trials.", "patient_explanation": "Dual immunotherapy first-line."}]}
+      }
+    },
+    "cervical": {
+      "biomarkers": {
+        "TMB-H": {"regimens": [{"name": "Pembrolizumab; Tisotumab Vedotin (2L)", "type": "IO / ADC", "line": "1st-2nd Line", "guideline_tier": "NCCN 1", "evidence_level": "Level 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35064063/", "rationale": "KEYNOTE-826 + innovaTV-301.", "patient_explanation": "Immunotherapy or tissue-factor ADC."}]}
+      }
     }
+  },
+  "universal_biomarkers": {
+    "MSI-H": [{"name": "Pembrolizumab (Keytruda)", "type": "Checkpoint Inhibitor", "line": "Pan-Cancer 2nd-Line+", "guideline_tier": "FDA Site-Agnostic", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28522730/", "rationale": "First tissue-agnostic approval (KEYNOTE-158) for MSI-H/dMMR tumors.", "patient_explanation": "Immunotherapy for repair-deficient tumors regardless of location."}],
+    "TMB-H": [{"name": "Pembrolizumab (Keytruda)", "type": "Checkpoint Inhibitor", "line": "Pan-Cancer", "guideline_tier": "FDA Site-Agnostic (TMB>=10)", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33212421/", "rationale": "KEYNOTE-158: site-agnostic approval for TMB-H solid tumors.", "patient_explanation": "Immunotherapy for highly mutated tumors."}],
+    "NTRK_fusion": [{"name": "Larotrectinib or Entrectinib/Repotrectinib", "type": "TRK Inhibitor", "line": "Pan-Cancer", "guideline_tier": "FDA Site-Agnostic", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29466156/", "rationale": "NTRK fusions are among the highest-value actionable alterations.", "patient_explanation": "Targeted therapy for TRK-fusion tumors."}],
+    "RET_fusion": [{"name": "Selpercatinib (Retevmo)", "type": "RET TKI", "line": "Pan-Cancer", "guideline_tier": "FDA Site-Agnostic", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved (2022)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32855183/", "rationale": "LIBRETTO-001 pan-tumor cohort.", "patient_explanation": "Targeted therapy for RET-fusion tumors."}],
+    "BRAF_V600E": [{"name": "Dabrafenib + Trametinib", "type": "BRAF/MEK", "line": "Pan-Cancer", "guideline_tier": "FDA Site-Agnostic", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31566009/", "rationale": "ROAR/CTMT212X2101 basket trials; site-agnostic V600E approval.", "patient_explanation": "Targeted BRAF-pathway therapy."}],
+    "HER2_IHC3": [{"name": "Trastuzumab Deruxtecan (Enhertu)", "type": "HER2 ADC", "line": "Pan-Cancer", "guideline_tier": "FDA Site-Agnostic (IHC3+)", "evidence_level": "OncoKB 1", "regulatory_status": "FDA Approved (2024)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38587237/", "rationale": "DESTINY-PanTumor02: first tumor-agnostic HER2 ADC approval.", "patient_explanation": "HER2-targeted antibody-drug conjugate."}],
+    "POLE": [{"name": "Checkpoint inhibitor (ultramutated context)", "type": "Checkpoint Inhibitor", "line": "Pan-Cancer", "guideline_tier": "Emerging", "evidence_level": "Level 2", "regulatory_status": "Biomarker-driven", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33212421/", "rationale": "POLE proofreading defects produce extreme neoantigen load and exceptional IO sensitivity.", "patient_explanation": "Immunotherapy for POLE-ultramutated tumors."}],
+    "NRG1_fusion": [{"name": "Zenocutuzumab (Bizengri)", "type": "NRG1 Bispecific", "line": "Pan-Cancer", "guideline_tier": "FDA Site-Agnostic", "evidence_level": "Level 2", "regulatory_status": "FDA Approved (2024)", "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38839275/", "rationale": "eNRGy: site-agnostic approval for NRG1-fusion solid tumors.", "patient_explanation": "Bispecific antibody for NRG1-fusion tumors."}]
+  }
 }
