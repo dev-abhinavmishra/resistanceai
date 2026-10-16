@@ -37,8 +37,10 @@ class CohortAnalytics:
                     "genes": set(ci.get("gene_mutations") or []),
                     "amps": {g for g, v in (ci.get("cna") or {}).items() if v >= 2},
                     "dels": {g for g, v in (ci.get("cna") or {}).items() if v <= -2},
-                    # HRD flag mirrors features.py: HRD-gene mutation OR deep
-                    # deletion of a core HR gene (BRCA1/2, ATM).
+                    # HRD flag for cohort queries: core HR-gene mutation OR
+                    # deep deletion of BRCA1/2/ATM — a deliberately tighter
+                    # set than features.HRD_GENES so feasibility counts
+                    # reflect the genes sponsors actually select on.
                     "hrd": bool(set(ci.get("gene_mutations") or []) &
                               {"BRCA1", "BRCA2", "PALB2", "ATM", "RAD51C", "RAD51D"})
                               or any((ci.get("cna") or {}).get(g, 0) <= -2

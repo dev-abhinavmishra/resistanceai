@@ -9,6 +9,16 @@ profile to evidence-ranked therapies and live clinical trials.
 > **Investigational use only.** This is a research prototype. It is not a
 > validated diagnostic device; all outputs require oncologist review.
 
+## Screenshots
+
+| Landing | Prediction snapshot | Therapy pathways |
+|---|---|---|
+| ![Landing](docs/screenshots/01_landing.png) | ![Snapshot](docs/screenshots/02_snapshot.png) | ![Pathways](docs/screenshots/03_pathways.png) |
+
+| Digital twins | Model validation |
+|---|---|
+| ![Digital twin](docs/screenshots/04_digital_twin.png) | ![Validation](docs/screenshots/05_validation.png) |
+
 ## Architecture
 
 ```
@@ -92,16 +102,40 @@ python -m unittest discover -s tests -v
 
 ## Deploy
 
-**Streamlit Community Cloud** — point the app at `app.py` from a fork/clone of
-this repo; `requirements.txt` + `.streamlit/config.toml` are already set up.
-Because the trained weights and corpus are licensed derivatives (see
-`DATA_SOURCES.md`), a clean checkout boots to the landing page with inference
-disabled — deploy a model artifact generated from steps 2–4 above via
-`RESISTANCEAI_MODEL_DIR`/`RESISTANCEAI_DATA_DIR` mounts, or run the trained
-model behind `backend/main.py` and treat Streamlit as the demo front-end.
+**Important — a public demo cannot ship the working model.** The trained
+weights and the derived corpus are CC BY-NC-ND derivatives of MSK-CHORD (see
+`DATA_SOURCES.md`), so they cannot be committed to a public git repo or baked
+into a public image. Any hosted deployment must supply them at runtime via
+`RESISTANCEAI_MODEL_DIR`/`RESISTANCEAI_DATA_DIR` mounts — there is no way to
+create a *working* public demo link that reads them from this repository.
 
-**Docker** — see the `RESISTANCEAI_MODEL_DIR`/`RESISTANCEAI_DATA_DIR` mount
-example under Notes below.
+**Streamlit Community Cloud** — point the app at `app.py` from a fork/clone of
+this repo; `requirements.txt` + `.streamlit/config.toml` are already set up and
+the app boots cleanly. **Caveat:** because Cloud apps can only read what is in
+the repo, a public Streamlit link shows the landing page and the 8 demo
+patients, but inference, real-patient worklist, digital twins and cohort
+analytics stay disabled (no model artifact, no corpus). Only deploy this way
+if the artifact/data mounts are provided privately.
+
+**Working hosted demo (Docker + mounts)** — the intended path for a live
+public link: run the image on a host that supports mounted volumes (Railway,
+Render, Fly.io, HF Spaces, a VM):
+
+```bash
+docker build -t resistance-ai .
+docker run -v /licensed/artifacts:/models -v /licensed/data:/data \
+  -e RESISTANCEAI_MODEL_DIR=/models -e RESISTANCEAI_DATA_DIR=/data \
+  -p 8501:8501 resistance-ai
+```
+
+`RESISTANCEAI_MODEL_DIR` must contain `resistance_model_v2.pkl` (+ the metrics
+JSONs); `RESISTANCEAI_DATA_DIR` must contain `patient_records.jsonl` +
+`feature_matrix.parquet` — all produced by steps 2–4 of Reproduce above. The
+same variables work for the Flask API (`backend/main.py`).
+
+**Local demo (one command after setup)** — `streamlit run app.py` is the
+supported single-command path on a machine that already has the licensed
+artifacts.
 
 **Configuration** — all runtime settings are environment variables; see
 `.env.example`.
@@ -128,16 +162,11 @@ example under Notes below.
   return counts but have outcome/genomic detail suppressed
   (`suppressed_small_n`) so individuals cannot be re-identified.
 - `.dockerignore` keeps raw data, the corpus, the weights, and runtime logs
-  out of images. To run the container with licensed artifacts, mount them and
-  point the app at the mounts:
-  `docker run -v /licensed/artifacts:/models -v /licensed/data:/data
-  -e RESISTANCEAI_MODEL_DIR=/models -e RESISTANCEAI_DATA_DIR=/data
-  -p 8501:8501 resistance-ai`
-  (the same variables work for the API and the Streamlit app).
-  `RESISTANCEAI_DATA_DIR` must contain `patient_records.jsonl` +
-  `feature_matrix.parquet` — without it, corpus-backed features (digital
-  twins, cohort analytics, the real-patient worklist) are unavailable while
-  inference still works.
+  out of images — mount licensed artifacts at runtime (see Deploy above).
+  Without `RESISTANCEAI_DATA_DIR` (`patient_records.jsonl` +
+  `feature_matrix.parquet`), corpus-backed features (digital twins, cohort
+  analytics, the real-patient worklist) are unavailable while inference
+  still works.
 - **Patient identity.** IMPACT and CHORD share the same `P-XXXXXXX` id
   namespace (~4.2k patients collide), so every consumer keys records by a
   cohort-qualified uid — `impact2017:P-0001234` vs `chord:P-0001234` are two

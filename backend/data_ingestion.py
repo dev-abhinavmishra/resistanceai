@@ -132,8 +132,11 @@ class ClinicalDataIngestor:
                        canonical_cancer_type(rec.get("cancer_type")))
         # Mock records name patients under "name"; the UI displays
         # "patient_name" (same key the corpus path uses) — alias it so demo
-        # patients aren't rendered as bare ids.
+        # patients aren't rendered as bare ids. Every ingested record also
+        # carries its own id so downstream consumers (e.g. the digital-twin
+        # self-exclusion) don't depend on the caller re-attaching it.
         rec.setdefault("patient_name", rec.get("name"))
+        rec.setdefault("patient_id", patient_id)
         return rec
 
 
@@ -182,6 +185,7 @@ def _lookup_corpus_patient(patient_id: str) -> Optional[Dict[str, Any]]:
         return None
     ci = rec["clinical_input"]
     out = dict(ci)
+    out["patient_id"] = record_uid(rec)
     out["patient_name"] = f"{rec['patient_id']} ({rec['cohort']})"
     out["detected_variants"] = list(ci.get("gene_mutations") or [])
     out["display"] = rec.get("display", {})

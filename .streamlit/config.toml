@@ -11,6 +11,12 @@ textColor = "#f5f7fc"
 
 [server]
 headless = true
+# Runtime ledger writes (audit_log.json, case_archive.json, ...) land under
+# backend/artifacts/ — inside the watched app dir — so every prediction would
+# otherwise raise the "File changed / Rerun" banner mid-demo. Hot-reload is
+# a dev convenience; disable watching for the shipped app (Streamlit Cloud
+# doesn't watch anyway). Re-enable locally if you want run-on-save.
+fileWatcherType = "none"
 
 [browser]
 gatherUsageStats = false

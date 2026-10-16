@@ -114,5 +114,5 @@ class ClinicalTrialEngine:
                 if t['site'].lower() == site.lower() or t['site'].lower() == 'universal'
             ]
             return filtered
-        except:
+        except Exception:
             return []

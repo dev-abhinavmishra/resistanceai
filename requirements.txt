@@ -11,5 +11,8 @@ altair<5
 plotly
 requests
 pyarrow
+# Used directly by backend/predictor.py to serialize single-row HGB inference
+# (also a transitive sklearn dep — declared explicitly because we import it).
+threadpoolctl
 flask
 flask-cors

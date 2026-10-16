@@ -113,11 +113,20 @@ class DigitalTwinEngine:
         site = ci.get("cancer_type_canonical")
         mask = np.ones(len(self._df), dtype=bool)
         scope = "all-sites"
+        # When the query patient is itself a corpus record (patient_id carries
+        # the cohort-qualified uid), exclude it — "similar patients" must mean
+        # *other* patients, not a distance-0 self-match.
+        q_uid = str(ci.get("patient_id") or "")
+        self_row = (self._meta["uid"] == q_uid).values if q_uid else None
         if same_site and site:
             same = (self._meta["site"] == site).values
+            if self_row is not None:
+                same = same & ~self_row
             if same.sum() >= k:
                 mask = same
                 scope = site
+        if self_row is not None:
+            mask = mask & ~self_row
 
         idx = np.where(mask)[0]
         dist = np.sqrt(((self._mat[idx] - qv) / self._std) ** 2).mean(axis=1)
