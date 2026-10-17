@@ -1,4 +1,4 @@
-# ResistanceAI: Frontier Oncology Decision Support (v9.0)
+# ResistanceAI: Molecular Tumor Board Decision Support (v9.0)
 
 ResistanceAI is a multi-omic clinical decision support prototype for Molecular
 Tumor Boards. A calibrated ensemble model trained on **35,286 sequenced
@@ -24,10 +24,13 @@ profile to evidence-ranked therapies and live clinical trials.
 ```
 Raw cBioPortal studies          Engine                        Interface
 ─────────────────────           ──────────────────────────    ──────────────
-msk_impact_2017/ ─┐             backend/models/ingest_v2.py   app.py (Streamlit, 8 tabs)
+msk_impact_2017/ ─┐             backend/models/ingest_v2.py   app.py (Streamlit entry point)
 msk_chord_2024/ ──┴─►           backend/data/patient_records  backend/main.py (Flask API)
                     JSONL corpus (35,286 records, 26,064 labeled)
                               │
+                              ├─ ui/theme.py                design tokens, CSS, chart chrome
+                              ├─ ui/components.py           hero, cards, landing, footer
+                              ├─ ui/tabs.py                 one renderer per dashboard tab
                               ├─ backend/features.py        shared feature schema (201 cols)
                               ├─ backend/models/train_v2.py HGB x8 + isotonic calibration
                               ├─ backend/predictor.py       calibrated inference + CI +
@@ -68,7 +71,7 @@ msk_chord_2024/ ──┴─►           backend/data/patient_records  backend/
 
 **Held-out performance (n=5,213):** ROC-AUC 0.781 · PR-AUC 0.815 ·
 Brier 0.183 · ECE 0.017. Per-cohort and per-cancer-type breakdowns plus the
-ROC/calibration curves live in the **🧪 VALIDATION** tab. Risk-stratum KM
+ROC/calibration curves live in the **Model performance** tab. Risk-stratum KM
 curves and cohort percentiles are computed from **5-fold out-of-fold** and
 **held-out test** predictions respectively — no patient is scored by a model
 that saw their record.
@@ -99,6 +102,39 @@ python backend/main.py                     # REST API on :5000 (/health /predict
 # 6. tests — pure-logic layer (no corpus or model artifact needed)
 python -m unittest discover -s tests -v
 ```
+
+## Judging the app (Congressional App Challenge)
+
+The submission rubric scores Concept, Technology (function + code), and
+Design. Where each criterion is visible:
+
+| Rubric criterion | Where it shows |
+|---|---|
+| Addresses a real need | Landing page problem framing; MTB workflow (board packet, decision capture) |
+| Functionality | "Load a demo patient" button — one click populates all 8 tabs with real data |
+| Complex features | Calibrated ensemble + attribution + mechanisms + KM survival + twins + live ClinicalTrials.gov |
+| Code quality | `backend/` pure-logic layer with unit tests; `ui/` presentation layer; `app.py` wiring only |
+| Design / UX | `DESIGN.md` design system — one accent, AA-contrast tokens, focus/reduced-motion/mobile states |
+
+**3-minute demo script:** (1) open on the landing page — read the problem
+panel aloud; (2) click **Load a demo patient**; (3) on Risk summary, read the
+plain-language line under the hero, then scroll to the attribution chart and
+mechanism cards; (4) Therapy options → show a matched regimen + live trial
+table; (5) Similar patients → twins' real survival curve; (6) Model
+performance → held-out ROC/calibration + "How the model works — and its
+limits" expander; (7) close on the code: `predictor.py` (calibrated
+inference), `mechanisms.py` (rule engine), `features.py` (201-column schema).
+
+The demo patient button loads a real sequenced case from the worklist
+(prefers a Lung entry — ALK/EGFR biology lights up mechanisms, therapies,
+and twin outcomes); it falls back to the built-in PX-* demos when the
+licensed corpus isn't mounted.
+
+**Presentation deck:** `ResistanceAI_Presentation_v9.pptx` — an 11-slide
+video deck in the app's design system, with current-UI screenshots
+(`docs/screenshots/v9_*.png`) and two behind-the-scenes code slides
+(`predictor.py`, `mechanisms.py`). Rebuild/retweak with
+`python deck/build_deck.py`.
 
 ## Deploy
 

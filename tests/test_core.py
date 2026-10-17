@@ -22,6 +22,7 @@ from backend.features import (canonical_cancer_type, fusion_gene_set,
                               is_msi_unstable, normalize_clinical_input,
                               normalize_msi_type)
 from backend.main import _validate_clinical_input
+from backend.mechanisms import analyze as analyze_mechanisms
 
 
 class TestCanonicalCancerType(unittest.TestCase):
@@ -152,6 +153,64 @@ class TestGenomicReportIngest(unittest.TestCase):
     def test_bad_json_raises(self):
         with self.assertRaises(ValueError):
             ClinicalDataIngestor.ingest_genomic_report("not json {")
+
+    def test_numeric_fields_coerced(self):
+        # Reports in the wild carry numbers as strings — the UI formats tmb
+        # with :.1f and the model vector applies np.log1p, so anything that
+        # isn't float-or-None crashes downstream.
+        import json
+        ci = ClinicalDataIngestor.ingest_genomic_report(json.dumps({
+            "biomarkers": {"tmb": "14.5", "sv_count": "3",
+                           "msi_score": "n/a", "purity": None,
+                           "signature_1_weight": "65.2"},
+        }))
+        self.assertEqual(ci["tmb"], 14.5)
+        self.assertEqual(ci["sv_count"], 3.0)
+        self.assertIsNone(ci["msi_score"])
+        self.assertIsNone(ci["tumor_purity"])
+        self.assertAlmostEqual(ci["spectrum_fractions"]["C>T"], 0.652)
+
+        # A malformed signature weight degrades to None like every other
+        # numeric field — it must not reject the whole report.
+        ci = ClinicalDataIngestor.ingest_genomic_report(json.dumps({
+            "biomarkers": {"signature_1_weight": "high"},
+        }))
+        self.assertIsNone(ci["spectrum_fractions"])
+
+    def test_cna_numeric_string_calls(self):
+        # CNA calls arrive as words ("amplification") or bare numeric
+        # strings ("2") depending on the report vendor — both are calls;
+        # an unmapped word degrades to a neutral 0, not a dropped case.
+        import json
+        ci = ClinicalDataIngestor.ingest_genomic_report(json.dumps({
+            "cna": {"ERBB2": "2", "PTEN": "deep_deletion", "MYC": "bogus"},
+        }))
+        self.assertEqual(ci["cna"]["ERBB2"], 2)
+        self.assertEqual(ci["cna"]["PTEN"], -2)
+        self.assertEqual(ci["cna"]["MYC"], 0)
+
+
+class TestMechanismEvidence(unittest.TestCase):
+    """Every triggered mechanism hypothesis must cite at least one evidence
+    line — rules gated on genes_all/genes_driver previously produced empty
+    evidence, which rendered as a bare "Evidence:" caption in the UI."""
+
+    def test_genes_all_and_driver_rule(self):
+        hits = analyze_mechanisms(
+            {"gene_mutations": ["TP53", "RB1", "EGFR"],
+             "cancer_type_canonical": "lung"})
+        sclc = [h for h in hits if "SCLC" in h["mechanism"]]
+        self.assertTrue(sclc)
+        self.assertTrue(sclc[0]["evidence"])
+        self.assertTrue(any("EGFR" in e for e in sclc[0]["evidence"]))
+
+    def test_fusion_driver_rule(self):
+        hits = analyze_mechanisms(
+            {"gene_mutations": ["TP53"],
+             "fusions": [{"gene1": "EML4", "gene2": "ALK"}]})
+        alk = [h for h in hits if "ALK" in h["mechanism"]]
+        self.assertTrue(alk)
+        self.assertTrue(any("ALK" in e for e in alk[0]["evidence"]))
 
 
 class TestApiValidation(unittest.TestCase):

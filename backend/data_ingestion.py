@@ -29,7 +29,17 @@ class ClinicalDataIngestor:
             cna_in = data.get("cnv") or data.get("cna") or {}
             fusions_in = data.get("fusions", [])
 
-            tmb_val = biomarkers.get("tmb")
+            def _num(v):
+                # Reports in the wild carry strings ("14.5", "high") — coerce
+                # to float-or-None so downstream f-string formatting and the
+                # model vector never see a raw string.
+                try:
+                    return float(v) if v is not None else None
+                except (TypeError, ValueError):
+                    return None
+
+            tmb_val = _num(biomarkers.get("tmb"))
+            sig1 = _num(biomarkers.get("signature_1_weight"))
             driver_variants = [v.get("gene") for v in variants if v.get("gene")]
             # Keep the protein-level change per variant — the predictor's
             # variant-specific therapy matching (e.g. BRAF V600E) needs it;
@@ -49,20 +59,23 @@ class ClinicalDataIngestor:
             cna = {}
             for k, v in cna_in.items():
                 if isinstance(v, str):
-                    cna[k] = {"amplification": 2, "amp": 2, "gain": 1,
-                              "deletion": -2, "deep_deletion": -2, "del": -2,
-                              "loss": -1}.get(v.lower(), 0)
+                    call = {"amplification": 2, "amp": 2, "gain": 1,
+                            "deletion": -2, "deep_deletion": -2, "del": -2,
+                            "loss": -1}.get(v.lower())
+                    # A bare numeric string ("2", "-1") is a call too — the
+                    # word map misses it, so coerce rather than dropping to 0.
+                    cna[k] = call if call is not None else int(_num(v) or 0)
                 else:
-                    cna[k] = int(v)
+                    cna[k] = int(_num(v) or 0)
 
-            sv_count = biomarkers.get("sv_count")
+            sv_count = _num(biomarkers.get("sv_count"))
             if sv_count is None and fusions_in:
-                sv_count = len(fusions_in) + int(biomarkers.get("sv_other", 0))
+                sv_count = len(fusions_in) + int(_num(biomarkers.get("sv_other")) or 0)
 
             return {
                 "cancer_type": data.get("cancer_type") or data.get("tumor_type"),
                 "stage": data.get("stage"),
-                "age_at_diagnosis": data.get("age") or biomarkers.get("age"),
+                "age_at_diagnosis": _num(data.get("age") or biomarkers.get("age")),
                 "sex": data.get("sex"),
                 "tmb": tmb_val,
                 "hr_deficiency": "present" if str(biomarkers.get("hrd_status", "")).lower() in
@@ -70,18 +83,17 @@ class ClinicalDataIngestor:
                 # Shared spelling family with the corpus path — covers
                 # 'MSI-H', 'MSI-High', 'Instable', 'MSS', 'MSI-L', ...
                 "msi_type": normalize_msi_type(msi),
-                "msi_score": biomarkers.get("msi_score"),
+                "msi_score": _num(biomarkers.get("msi_score")),
                 "gene_mutations": driver_variants,
                 "mutation_details": mutation_details,
                 "cna": cna,
                 "fusions": fusions_in,
                 "sv_count": sv_count,
-                "tumor_purity": biomarkers.get("purity"),
+                "tumor_purity": _num(biomarkers.get("purity")),
                 # signature_1_weight is a 0-100 class fraction — encode as a
                 # direct fraction, not a count (a lone count reads as 100% C>T).
                 "spectrum_fractions": (
-                    {"C>T": float(biomarkers["signature_1_weight"]) / 100.0}
-                    if biomarkers.get("signature_1_weight") is not None else None),
+                    {"C>T": sig1 / 100.0} if sig1 is not None else None),
                 "detected_variants": driver_variants,
             }
         except Exception as e:

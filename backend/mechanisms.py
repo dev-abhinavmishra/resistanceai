@@ -231,17 +231,27 @@ def analyze(clinical_input: Dict[str, Any]) -> List[Dict[str, Any]]:
         if w.get("genes_driver") and not w["genes_driver"] & (muts | fus):
             continue
 
-        evidence = []
+        evidence, seen_ev = [], set()
+
+        def ev(s):
+            if s not in seen_ev:
+                seen_ev.add(s)
+                evidence.append(s)
+
         for g in sorted(w.get("genes", set()) & (muts | amps | dels)):
-            evidence.append(f"{g} alteration detected")
+            ev(f"{g} alteration detected")
+        for g in sorted(w.get("genes_all", set()) & (muts | amps | dels)):
+            ev(f"{g} alteration detected")
         for g in sorted(w.get("genes_any", set()) & (muts | amps | dels | fus)):
-            evidence.append(f"{g} alteration detected")
+            ev(f"{g} alteration detected")
+        for g in sorted(w.get("genes_driver", set()) & (muts | fus)):
+            ev(f"{g} driver alteration detected")
         for g in sorted(w.get("cna_amp", set()) & amps):
-            evidence.append(f"{g} amplification (CN≥2)")
+            ev(f"{g} amplification (CN≥2)")
         for g in sorted(w.get("cna_del", set()) & dels):
-            evidence.append(f"{g} deep deletion")
+            ev(f"{g} deep deletion")
         if w.get("min_tmb") and tmb >= w["min_tmb"]:
-            evidence.append(f"TMB {tmb:.1f} mut/Mb")
+            ev(f"TMB {tmb:.1f} mut/Mb")
         hits.append({
             "mechanism": rule["mechanism"], "category": rule["category"],
             "implication": rule["implication"], "strategy": rule["strategy"],

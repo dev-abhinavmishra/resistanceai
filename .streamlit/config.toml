@@ -1,13 +1,27 @@
 # Streamlit configuration for ResistanceAI.
-# Dark theme matching the app's oncology-console palette; also used by
-# Streamlit Community Cloud deployments.
+# Theme tokens mirror app.py's design system (see DESIGN.md) so native
+# widgets and custom HTML share one palette — also used by Streamlit
+# Community Cloud deployments.
 
 [theme]
 base = "dark"
-primaryColor = "#10b981"
-backgroundColor = "#1a192b"
-secondaryBackgroundColor = "#242136"
-textColor = "#f5f7fc"
+primaryColor = "#3b82f6"
+backgroundColor = "#0f172a"
+secondaryBackgroundColor = "#1e293b"
+textColor = "#f1f5f9"
+font = "sans serif"
+
+# Sidebar inherits base="dark" defaults that clash with the token palette;
+# pin it to the same surface/border tokens the app stylesheet uses.
+[theme.sidebar]
+backgroundColor = "#1e293b"
+secondaryBackgroundColor = "#141f36"
+textColor = "#f1f5f9"
+primaryColor = "#3b82f6"
+borderColor = "#2b3a52"
+showWidgetBorder = true
+baseRadius = "small"
+buttonRadius = "small"
 
 [server]
 headless = true
