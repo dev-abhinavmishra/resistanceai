@@ -16,7 +16,8 @@ from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
-from pptx.enum.shapes import MSO_SHAPE
+from pptx.enum.shapes import MSO_SHAPE, MSO_CONNECTOR
+from pptx.oxml.ns import qn
 from PIL import Image
 from pathlib import Path
 
@@ -396,63 +397,159 @@ notes(s, "Technically the pipeline is four steps. The DNA report is cleaned "
          "turns their average vote into a true probability, and how much they "
          "disagree becomes the honest band on screen.")
 
-# ================= 9. SYSTEM ARCHITECTURE =================
+# ================= 9. DATA-FLOW MODEL =================
 s = slide()
 pageno(s, 9)
-title(s, "Two pipelines: one built the brain, one runs it.")
+title(s, "Trace the data: trained once, then scored per request.")
+
+# DFD shapes: circles = processes, cylinders = data stores,
+# rectangles = external entities, arrows = data flows (dashed = load/read).
 
 
-def arch(x, t1, t2, y):
-    box(s, x, y, 2.08, 0.98, round_=True)
-    text(s, x + 0.14, y + 0.13, 1.85, 0.38, t1, size=15, bold=True,
-         font=MONO)
-    text(s, x + 0.14, y + 0.54, 1.85, 0.38, t2, size=11, color=MUT,
-         font=MONO)
+def node_lbl(xc, y, t, w=1.1, size=9):
+    text(s, xc - w / 2, y, w, 0.3, t, size=size, color=MUT, font=MONO,
+         align=PP_ALIGN.CENTER, sp_after=0)
 
 
-AX = [0.85, 3.25, 5.65, 8.05, 10.45]
-eyebrow(s, 0.9, 2.12, "BUILT ONCE — TRAINING")
-for x, (t1, t2) in zip(AX, [("MSK datasets", "IMPACT + CHORD"),
-                            ("ingest_v2.py", "clean · 201 features"),
-                            ("corpus", "26,064 records"),
-                            ("train_v2.py", "8 models, calibrated"),
-                            ("artifacts", "weights + metrics")]):
-    arch(x, t1, t2, 2.58)
-for i in range(4):
-    text(s, AX[i] + 2.1, 2.82, 0.3, 0.5, "›", size=26, color=ACCTXT,
-         align=PP_ALIGN.CENTER)
-text(s, 0.85, 3.78, 11.7, 0.4,
-     "corpus + model artifact load once, at app start        ↓",
-     size=13, color=MUT, font=MONO, align=PP_ALIGN.CENTER)
-eyebrow(s, 0.9, 4.24, "RUNS ON EVERY PATIENT — THE LIVE APP")
-for x, (t1, t2) in zip(AX, [("genomic report", "upload / worklist"),
-                            ("features.py", "same 201 signals"),
-                            ("predictor.py", "score · band · why"),
-                            ("engines", "twins · cohorts"),
-                            ("app.py + API", "Streamlit · Flask")]):
-    arch(x, t1, t2, 4.68)
-for i in range(4):
-    text(s, AX[i] + 2.1, 4.92, 0.3, 0.5, "›", size=26, color=ACCTXT,
-         align=PP_ALIGN.CENTER)
-eyebrow(s, 0.9, 5.92, "SERVICES IT TALKS TO")
-box(s, 0.85, 6.34, 5.7, 0.6, round_=True)
-text(s, 1.1, 6.47, 5.3, 0.35, "ClinicalTrials.gov — live trial search",
-     size=14, color=MUT, font=MONO)
-box(s, 6.8, 6.34, 5.7, 0.6, round_=True)
-text(s, 7.05, 6.47, 5.3, 0.35, "cBioPortal — source of the training data",
-     size=14, color=MUT, font=MONO)
-notes(s, "Here is the whole system on one slide. The top lane runs once: "
-         "the two Memorial Sloan Kettering datasets are pulled through "
-         "cBioPortal, cleaned into the 201-signal schema, stored as the "
-         "26,064-patient corpus, then eight models are trained and "
-         "calibrated. The corpus and model artifact load once when the app "
-         "starts. The bottom lane is what happens for every patient: a "
-         "report is normalized into the same 201 signals, the predictor "
-         "returns the score, the honest band and the why, then the engines "
-         "find similar patients and safe cohort stats, all of which the "
-         "Streamlit UI, or the Flask API for other software, displays. "
-         "Two outside services join live: ClinicalTrials.gov for recruiting "
-         "trials and cBioPortal for the source data.")
+def flow(x1, y1, x2, y2, dashed=False, color=None):
+    conn = s.shapes.add_connector(MSO_CONNECTOR.STRAIGHT, Inches(x1),
+                                  Inches(y1), Inches(x2), Inches(y2))
+    conn.line.color.rgb = color or (MUT if dashed else ACC)
+    conn.line.width = Pt(1.5 if dashed else 1.75)
+    ln = conn.line._get_or_add_ln()
+    if dashed:
+        ln.append(ln.makeelement(qn("a:prstDash"), {"val": "dash"}))
+    ln.append(ln.makeelement(
+        qn("a:tailEnd"), {"type": "triangle", "w": "med", "len": "med"}))
+    conn.shadow.inherit = False
+
+
+def entity(x, y, w, name, sub=None, h=0.85):
+    box(s, x, y, w, h)
+    text(s, x + 0.08, y + 0.14, w - 0.16, 0.35, name, size=11.5, bold=True,
+         align=PP_ALIGN.CENTER, sp_after=0)
+    if sub:
+        text(s, x + 0.08, y + 0.5, w - 0.16, 0.28, sub, size=9, color=MUT,
+             font=MONO, align=PP_ALIGN.CENTER, sp_after=0)
+
+
+def process(xc, yc, name, sub, d=1.2):
+    shp = s.shapes.add_shape(MSO_SHAPE.OVAL, Inches(xc - d / 2),
+                             Inches(yc - d / 2), Inches(d), Inches(d))
+    shp.fill.solid()
+    shp.fill.fore_color.rgb = ACC
+    shp.line.color.rgb = ACC
+    shp.shadow.inherit = False
+    text(s, xc - d / 2, yc - 0.3, d, 0.32, name, size=12, bold=True,
+         color=BTNTXT, align=PP_ALIGN.CENTER, sp_after=0)
+    text(s, xc - d / 2, yc + 0.05, d, 0.26, sub, size=8, color=BTNTXT,
+         font=MONO, align=PP_ALIGN.CENTER, sp_after=0)
+
+
+def store(x, y, w, name, sub, h=0.9):
+    shp = s.shapes.add_shape(MSO_SHAPE.CAN, Inches(x), Inches(y),
+                             Inches(w), Inches(h))
+    shp.fill.solid()
+    shp.fill.fore_color.rgb = SURF
+    shp.line.color.rgb = ACC
+    shp.line.width = Pt(1.25)
+    shp.shadow.inherit = False
+    text(s, x, y + h * 0.34, w, 0.3, name, size=12, bold=True,
+         align=PP_ALIGN.CENTER, sp_after=0)
+    text(s, x, y + h * 0.62, w, 0.26, sub, size=8, color=MUT, font=MONO,
+         align=PP_ALIGN.CENTER, sp_after=0)
+
+
+# ---- lane 1: offline training ----
+eyebrow(s, 0.9, 2.12, "OFFLINE — TRAINS ONCE")
+entity(0.85, 2.72, 1.5, "cBioPortal", "IMPACT + CHORD")
+process(3.6, 3.15, "Ingest", "ingest_v2.py")
+store(4.85, 2.7, 1.4, "Corpus", "26,064 records")
+process(7.5, 3.15, "Train", "8 HGB + iso")
+store(8.75, 2.7, 1.4, "Artifact", "pkl + metrics")
+box(s, 10.45, 2.7, 2.05, 0.9)
+text(s, 10.6, 2.82, 1.75, 0.7,
+     "re-run to retrain — weights stay local, mounted at deploy",
+     size=11, color=MUT, spacing=1.05, sp_after=0)
+flow(2.35, 3.15, 2.98, 3.15)
+flow(4.22, 3.15, 4.82, 3.15)
+flow(6.28, 3.15, 6.88, 3.15)
+flow(8.12, 3.15, 8.72, 3.15)
+node_lbl(2.67, 2.82, "raw data")
+node_lbl(4.52, 2.82, "records")
+node_lbl(6.58, 2.82, "features")
+node_lbl(8.42, 2.82, "weights")
+
+# ---- lane 2: live request ----
+eyebrow(s, 0.9, 4.32, "LIVE — EVERY REQUEST")
+entity(0.85, 4.98, 1.5, "Genomic report", "upload · worklist")
+process(3.6, 5.4, "Normalize", "features.py")
+process(5.42, 5.4, "Predict", "predictor.py")
+process(7.24, 5.4, "Match", "twins · cohorts")
+entity(8.75, 4.98, 1.5, "Streamlit UI", "8 tabs · Flask")
+entity(10.75, 4.98, 1.5, "Oncologist", "reads, decides")
+flow(2.35, 5.4, 2.98, 5.4)
+flow(4.22, 5.4, 4.8, 5.4)
+flow(6.04, 5.4, 6.62, 5.4)
+flow(7.86, 5.4, 8.72, 5.4)
+flow(10.28, 5.4, 10.72, 5.4)
+node_lbl(2.67, 5.07, "report")
+node_lbl(4.51, 5.07, "signals")
+node_lbl(6.33, 5.07, "proba")
+node_lbl(8.29, 5.07, "matches")
+node_lbl(10.5, 5.07, "read", w=0.5)
+
+# store-to-process loads at app start (dashed, one teal one gray so
+# their crossing reads cleanly)
+flow(9.45, 3.62, 5.68, 4.76, dashed=True, color=ACCTXT)
+flow(5.55, 3.62, 7.0, 4.76, dashed=True)
+node_lbl(8.35, 4.28, "weights", w=0.9)
+node_lbl(5.75, 4.28, "corpus", w=0.9)
+
+# live external service
+box(s, 8.5, 6.3, 2.1, 0.55)
+text(s, 8.5, 6.34, 2.1, 0.24, "ClinicalTrials.gov", size=11, bold=True,
+     align=PP_ALIGN.CENTER, sp_after=0)
+text(s, 8.5, 6.6, 2.1, 0.22, "live trial search", size=8, color=MUT,
+     font=MONO, align=PP_ALIGN.CENTER, sp_after=0)
+flow(8.85, 6.28, 7.62, 6.02)
+
+# legend
+LY = 6.55
+shp = s.shapes.add_shape(MSO_SHAPE.OVAL, Inches(0.85), Inches(LY),
+                         Inches(0.2), Inches(0.2))
+shp.fill.solid(); shp.fill.fore_color.rgb = ACC
+shp.line.color.rgb = ACC; shp.shadow.inherit = False
+text(s, 1.15, LY - 0.04, 0.85, 0.3, "process", size=9, color=MUT,
+     font=MONO, sp_after=0)
+box(s, 2.1, LY, 0.2, 0.2)
+text(s, 2.4, LY - 0.04, 0.85, 0.3, "entity", size=9, color=MUT, font=MONO,
+     sp_after=0)
+shp = s.shapes.add_shape(MSO_SHAPE.CAN, Inches(3.35), Inches(LY - 0.03),
+                         Inches(0.22), Inches(0.28))
+shp.fill.solid(); shp.fill.fore_color.rgb = SURF
+shp.line.color.rgb = ACC; shp.shadow.inherit = False
+text(s, 3.68, LY - 0.04, 0.8, 0.3, "store", size=9, color=MUT, font=MONO,
+     sp_after=0)
+flow(4.6, LY + 0.1, 4.98, LY + 0.1)
+text(s, 5.08, LY - 0.04, 1.0, 0.3, "data flow", size=9, color=MUT,
+     font=MONO, sp_after=0)
+flow(6.15, LY + 0.1, 6.53, LY + 0.1, dashed=True)
+text(s, 6.63, LY - 0.04, 1.4, 0.3, "load / fetch", size=9, color=MUT,
+     font=MONO, sp_after=0)
+notes(s, "Read it like a data-flow diagram. Circles are things the code "
+         "does, cylinders are stored data, rectangles are the outside "
+         "world, and every arrow is labeled with what moves along it. "
+         "Top lane, run once: data leaves cBioPortal, ingest cleans it "
+         "into the 201-signal schema, the corpus stores 26,064 records, "
+         "training writes one calibrated artifact. Bottom lane, every "
+         "request: a genomic report is normalized, Predict turns it into "
+         "a score, Match finds similar patients and safe cohorts, and the "
+         "result reaches the oncologist through Streamlit or the Flask "
+         "API. The two dashed lines are the only crossings: the artifact "
+         "loads into Predict and the corpus loads into Match at startup. "
+         "ClinicalTrials.gov is the one live fetch — trials are searched "
+         "fresh for each patient.")
 
 # ================= 10. CODE =================
 s = slide()

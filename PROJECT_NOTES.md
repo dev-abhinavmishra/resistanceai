@@ -491,10 +491,13 @@ HIPAA-grade — production needs real DB + IAM audit.
   5 product screenshot (v9_risk_full) + live-demo link · 6 attribution
   screenshot + cited-mechanisms card · 7 therapies + twins screenshots ·
   8 four-step pipeline diagram + 201-signals/why-8-models cards ·
-  9 whole-system architecture: two lanes (BUILT ONCE training:
-  datasets→ingest→corpus→train→artifacts; RUNS ON EVERY PATIENT:
-  report→features→predictor→engines→app.py+API) + services strip
-  (ClinicalTrials.gov, cBioPortal) · 10 code slide (predictor.py
+  9 data-flow diagram: real DFD glyphs — teal circles = processes
+  (Ingest/Train/Normalize/Predict/Match), CAN cylinders = stores
+  (Corpus/Artifact), rectangles = entities (cBioPortal, report,
+  Streamlit UI, Oncologist, ClinicalTrials.gov), connector arrows w/
+  XML arrowheads labeled per flow, dashed = load/fetch (corpus→Match,
+  artifact→Predict cross as color-coded X), legend bottom-left ·
+  10 code slide (predictor.py
   inference, lightly simplified) · 11 readable-code slide
   (digital_twin distance + cohort MIN_COHORT suppression) ·
   12 report card (calibration chart + AUC table by cancer type) ·
