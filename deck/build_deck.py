@@ -38,6 +38,7 @@ UI   = "Georgia"     # serif voice for titles and prose
 MONO = "Consolas"    # monospace for code, numbers, lab tags
 
 DEMO_URL = "https://resistanceai.streamlit.app"
+TOTAL    = 14
 
 ROOT = Path(__file__).resolve().parents[1]
 SHOT = ROOT / "docs" / "screenshots"
@@ -131,7 +132,7 @@ def linkify(tb, url=DEMO_URL):
 
 
 def pageno(s, n):
-    text(s, 12.4, 7.1, 0.85, 0.3, f"{n:02d} / 13", size=11, color=MUT,
+    text(s, 12.4, 7.1, 0.85, 0.3, f"{n:02d} / {TOTAL}", size=11, color=MUT,
          font=MONO, align=PP_ALIGN.RIGHT, sp_after=0)
 
 
@@ -395,9 +396,67 @@ notes(s, "Technically the pipeline is four steps. The DNA report is cleaned "
          "turns their average vote into a true probability, and how much they "
          "disagree becomes the honest band on screen.")
 
-# ================= 9. CODE =================
+# ================= 9. SYSTEM ARCHITECTURE =================
 s = slide()
 pageno(s, 9)
+title(s, "Two pipelines: one built the brain, one runs it.")
+
+
+def arch(x, t1, t2, y):
+    box(s, x, y, 2.08, 0.98, round_=True)
+    text(s, x + 0.14, y + 0.13, 1.85, 0.38, t1, size=15, bold=True,
+         font=MONO)
+    text(s, x + 0.14, y + 0.54, 1.85, 0.38, t2, size=11, color=MUT,
+         font=MONO)
+
+
+AX = [0.85, 3.25, 5.65, 8.05, 10.45]
+eyebrow(s, 0.9, 2.12, "BUILT ONCE — TRAINING")
+for x, (t1, t2) in zip(AX, [("MSK datasets", "IMPACT + CHORD"),
+                            ("ingest_v2.py", "clean · 201 features"),
+                            ("corpus", "26,064 records"),
+                            ("train_v2.py", "8 models, calibrated"),
+                            ("artifacts", "weights + metrics")]):
+    arch(x, t1, t2, 2.58)
+for i in range(4):
+    text(s, AX[i] + 2.1, 2.82, 0.3, 0.5, "›", size=26, color=ACCTXT,
+         align=PP_ALIGN.CENTER)
+text(s, 0.85, 3.78, 11.7, 0.4,
+     "corpus + model artifact load once, at app start        ↓",
+     size=13, color=MUT, font=MONO, align=PP_ALIGN.CENTER)
+eyebrow(s, 0.9, 4.24, "RUNS ON EVERY PATIENT — THE LIVE APP")
+for x, (t1, t2) in zip(AX, [("genomic report", "upload / worklist"),
+                            ("features.py", "same 201 signals"),
+                            ("predictor.py", "score · band · why"),
+                            ("engines", "twins · cohorts"),
+                            ("app.py + API", "Streamlit · Flask")]):
+    arch(x, t1, t2, 4.68)
+for i in range(4):
+    text(s, AX[i] + 2.1, 4.92, 0.3, 0.5, "›", size=26, color=ACCTXT,
+         align=PP_ALIGN.CENTER)
+eyebrow(s, 0.9, 5.92, "SERVICES IT TALKS TO")
+box(s, 0.85, 6.34, 5.7, 0.6, round_=True)
+text(s, 1.1, 6.47, 5.3, 0.35, "ClinicalTrials.gov — live trial search",
+     size=14, color=MUT, font=MONO)
+box(s, 6.8, 6.34, 5.7, 0.6, round_=True)
+text(s, 7.05, 6.47, 5.3, 0.35, "cBioPortal — source of the training data",
+     size=14, color=MUT, font=MONO)
+notes(s, "Here is the whole system on one slide. The top lane runs once: "
+         "the two Memorial Sloan Kettering datasets are pulled through "
+         "cBioPortal, cleaned into the 201-signal schema, stored as the "
+         "26,064-patient corpus, then eight models are trained and "
+         "calibrated. The corpus and model artifact load once when the app "
+         "starts. The bottom lane is what happens for every patient: a "
+         "report is normalized into the same 201 signals, the predictor "
+         "returns the score, the honest band and the why, then the engines "
+         "find similar patients and safe cohort stats, all of which the "
+         "Streamlit UI, or the Flask API for other software, displays. "
+         "Two outside services join live: ClinicalTrials.gov for recruiting "
+         "trials and cBioPortal for the source data.")
+
+# ================= 10. CODE =================
+s = slide()
+pageno(s, 10)
 title(s, "It even scores how sure it is.")
 code = [
     ("# eight models each make a call",                            MUT),
@@ -430,9 +489,9 @@ notes(s, "This is the honest part, in the actual code. The eight models vote, "
          "measure, not a guarantee, and the app never pretends to be sure "
          "when it is not.")
 
-# ================= 10. READABLE CODE =================
+# ================= 11. READABLE CODE =================
 s = slide()
-pageno(s, 10)
+pageno(s, 11)
 title(s, "Some of the most careful code is the easiest to read.")
 panels = [
     (0.85, "FINDING SIMILAR PATIENTS", "backend/digital_twin.py",
@@ -466,9 +525,9 @@ notes(s, "Two more spots worth a read. The twin engine measures how "
          "than five patients it returns only the count, so no small cohort "
          "can be picked apart.")
 
-# ================= 11. THE REPORT CARD =================
+# ================= 12. THE REPORT CARD =================
 s = slide()
-pageno(s, 11)
+pageno(s, 12)
 title(s, "Tested on patients it never saw, the numbers hold.")
 pic(s, str(SHOT / "chart_calibration.png"), 0.8, 2.15, 5.9)
 text(s, 7.15, 2.3, 5.35, 2.7, [
@@ -493,9 +552,9 @@ notes(s, "Here is the report card on 5,213 patients the model never trained "
          "down to 0.71 on pancreatic, and across both source datasets. It is "
          "not a crystal ball, and the app says that on the screen.")
 
-# ================= 12. CLOSE =================
+# ================= 13. CLOSE =================
 s = slide()
-pageno(s, 12)
+pageno(s, 13)
 box(s, 0, 7.35, 13.333, 0.15, fill=ACC)
 ring(s, 10.9, 4.4, 4.4)
 ring(s, 12.0, 5.5, 2.2)
@@ -523,9 +582,9 @@ notes(s, "That is ResistanceAI. It gives a doctor the kind of read an expert "
          "and the button on screen opens the public demo at "
          "resistanceai.streamlit.app. Thanks for watching.")
 
-# ================= 13. SOURCES =================
+# ================= 14. SOURCES =================
 s = slide()
-pageno(s, 13)
+pageno(s, 14)
 title(s, "Sources")
 text(s, 0.85, 2.1, 11.6, 4.7, [
     "Zehir et al. MSK-IMPACT cohort, Nature Medicine 2017, via cBioPortal.",

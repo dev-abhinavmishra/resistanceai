@@ -130,10 +130,11 @@ The demo patient button loads a real sequenced case from the worklist
 and twin outcomes); it falls back to the built-in PX-* demos when the
 licensed corpus isn't mounted.
 
-**Presentation deck:** `ResistanceAI_Presentation_v9.pptx` — a 13-slide
+**Presentation deck:** `ResistanceAI_Presentation_v9.pptx` — a 14-slide
 video deck in an ink + teal scheme, written for a lay audience:
 full-sentence titles, speaker notes on every slide, current-UI
-screenshots (`docs/screenshots/v9_*.png`), the real held-out
+screenshots (`docs/screenshots/v9_*.png`), a whole-system architecture
+diagram (offline training lane vs live request lane), the real held-out
 calibration chart, two code slides (`predictor.py` inference path, plus
 the readable twin-matching and small-cohort-suppression code), and a
 clickable link to the live demo (`resistanceai.streamlit.app`) on the
