@@ -15,6 +15,7 @@ from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 from pptx.enum.shapes import MSO_SHAPE
 from pptx.oxml.ns import qn
 from PIL import Image
+from pathlib import Path
 
 # ---------- theme: 2 fonts, 1 dark + 1 light + 1 accent ----------
 BG     = RGBColor(0x0F, 0x17, 0x2A)
@@ -29,9 +30,9 @@ GOOD   = RGBColor(0x34, 0xD3, 0x99)
 UI   = "Segoe UI"
 MONO = "Consolas"
 
-ROOT = r"D:\Abhinav Computer Files\Projects\ResistanceAI - Predictive Cancer Resistance"
-SHOT = ROOT + r"\docs\screenshots"
-OUT  = ROOT + r"\ResistanceAI_Presentation_v9.pptx"
+ROOT = Path(__file__).resolve().parents[1]
+SHOT = ROOT / "docs" / "screenshots"
+OUT  = ROOT / "ResistanceAI_Presentation_v9.pptx"
 
 prs = Presentation()
 prs.slide_width  = Inches(13.333)
@@ -167,11 +168,10 @@ text(s, 0.85, 2.15, 7.1, 4.4, [
 box(s, 8.45, 2.1, 4.1, 4.3, round_=True)
 text(s, 8.85, 2.55, 3.35, 0.5, "WHAT AN ONCOLOGIST IS",
      size=13, color=ACCTXT, bold=True)
-text(s, 8.85, 3.05, 3.35, 3.2,
-     "The doctor who treats cancer.\n\nWhen the DNA report arrives, "
-     "they choose the drug. The report is long, the evidence is "
-     "scattered, and the clock is running.",
-     size=20, color=MUT, spacing=1.2)
+text(s, 8.85, 3.05, 3.35, 3.2, [
+    "The doctor who treats cancer.",
+    "When the DNA report lands, they choose the drug, often alone.",
+], size=24, color=MUT, spacing=1.2)
 notes(s, "When a tumor report comes back, a panel of specialists called a "
          "molecular tumor board can review it and recommend a drug. Those "
          "panels mostly exist at large academic cancer centers. The oncologist, "
@@ -191,9 +191,9 @@ box(s, 8.5, 2.55, 4.05, 3.5, round_=True)
 text(s, 8.9, 2.95, 3.3, 0.45, "WHERE THE DATA CAME FROM",
      size=13, color=ACCTXT, bold=True)
 text(s, 8.9, 3.45, 3.3, 2.4,
-     "Two public research datasets from Memorial Sloan Kettering, "
+     "Two public datasets from Memorial Sloan Kettering, "
      "one of the largest cancer centers in the world.",
-     size=20, color=MUT, spacing=1.2)
+     size=24, color=MUT, spacing=1.2)
 src_line(s, "Source: MSK-IMPACT (Zehir et al., Nat Med 2017) and MSK-CHORD "
             "(Nature 2024) via cBioPortal.")
 notes(s, "Instead of writing rules by hand, I trained the model on two public "
@@ -205,7 +205,7 @@ notes(s, "Instead of writing rules by hand, I trained the model on two public "
 # ================= 5. THE PRODUCT =================
 s = slide()
 title(s, "It estimates the chance the next treatment fails.")
-pic(s, SHOT + r"\v9_risk_full.png", 0.7, 1.95, 8.25)
+pic(s, str(SHOT / "v9_risk_full.png"), 0.7, 1.95, 8.25)
 text(s, 9.3, 2.4, 3.3, 3.8, [
     "Load a patient in one click.",
     "One read: 53 percent.",
@@ -219,11 +219,10 @@ notes(s, "Here it is running. I load a real lung cancer patient and the app "
 # ================= 6. IT SHOWS ITS WORK =================
 s = slide()
 title(s, "It shows exactly which evidence moved the number.")
-pic(s, SHOT + r"\v9_attrib.png", 1.75, 1.8, 9.85)
-text(s, 0.85, 7.0, 11.6, 0.4,
-     "Left: each feature's push on the score.   "
-     "Right: escape routes to watch, each citing the mutation it found.",
-     size=18, color=MUT, align=PP_ALIGN.CENTER)
+pic(s, str(SHOT / "v9_attrib.png"), 1.75, 1.8, 9.85)
+text(s, 0.85, 6.95, 11.6, 0.45,
+     "Left: what moved the score.   Right: the cited evidence.",
+     size=24, color=MUT, align=PP_ALIGN.CENTER)
 notes(s, "Judges and doctors ask the same question: why this number. The chart "
          "on the left removes each feature one at a time and measures how much "
          "the score moves. The cards on the right name biological escape "
@@ -233,13 +232,13 @@ notes(s, "Judges and doctors ask the same question: why this number. The chart "
 # ================= 7. WHAT TO TRY NEXT =================
 s = slide()
 title(s, "Then it lines up what is worth trying next.")
-pic(s, SHOT + r"\v9_therapies.png", 0.75, 1.75, 6.0)
-pic(s, SHOT + r"\v9_twins.png",    6.95, 1.75, 5.9)
+pic(s, str(SHOT / "v9_therapies.png"), 0.75, 1.75, 6.0)
+pic(s, str(SHOT / "v9_twins.png"),     6.95, 1.75, 5.9)
 text(s, 0.85, 6.35, 11.6, 0.9,
      "Drugs matched to this tumor's mutations.   "
      "Recruiting trials, searched live.   "
      "Outcomes of similar patients.",
-     size=20, color=MUT)
+     size=24, color=MUT)
 notes(s, "A risk score alone does not help anyone act. So the app maps the "
          "patient's mutations to treatment regimens with their evidence "
          "grades, searches ClinicalTrials.gov live for recruiting studies, "
@@ -249,17 +248,17 @@ notes(s, "A risk score alone does not help anyone act. So the app maps the "
 # ================= 8. HOW IT WORKS (diagram) =================
 s = slide()
 title(s, "Behind the screen, four steps a doctor can inspect.")
-steps = [("DNA report in", "sequencing file"),
+steps = [("DNA report", "sequencing file"),
          ("201 signals", "mutations and history"),
          ("8 models vote", "each sees different patients"),
-         ("A probability", "calibrated, with a range")]
+         ("Probability", "calibrated, with a range")]
 bx, bw, bh = 0.85, 2.55, 2.1
 for i, (t1, t2) in enumerate(steps):
     x = bx + i * 3.13
     box(s, x, 2.6, bw, bh, round_=True)
     text(s, x, 2.85, bw, 0.7, str(i + 1), size=30, bold=True,
          color=ACCTXT, font=MONO, align=PP_ALIGN.CENTER)
-    text(s, x + 0.15, 3.5, bw - 0.3, 0.7, t1, size=21, bold=True,
+    text(s, x + 0.15, 3.5, bw - 0.3, 0.7, t1, size=24, bold=True,
          align=PP_ALIGN.CENTER)
     text(s, x + 0.15, 4.15, bw - 0.3, 0.55, t2, size=15, color=MUT,
          align=PP_ALIGN.CENTER)
@@ -280,14 +279,14 @@ notes(s, "Technically the pipeline is four steps. The DNA report is cleaned "
 s = slide()
 title(s, "It even scores how sure it is.")
 code = [
-    ("# eight models each make a call",                              MUT),
-    ("votes   = [m.predict(X) for m in self.models]",                TXT),
-    ("mean    = float(np.mean(votes))        # the estimate",        TXT),
-    ("spread  = float(np.std(votes))         # the disagreement",    TXT),
-    ("",                                                             TXT),
-    ("# disagreement becomes the band on screen",                    MUT),
-    ("low, high = calibrate(mean - 2*spread,",                       TXT),
-    ("              mean + 2*spread)",                               TXT),
+    ("# eight models each make a call",                            MUT),
+    ("votes = [m.predict_proba(x)[:, 1][0] for m in self.models]", TXT),
+    ("proba = self.isotonic.predict([np.mean(votes)])[0]",         TXT),
+    ("score = int(round(proba * 100))    # the estimate",          TXT),
+    ("",                                                           TXT),
+    ("# disagreement becomes the band on screen",                  MUT),
+    ("half  = max(2, int(round(1.645 * np.std(votes) * 100)))",    TXT),
+    ("ci    = [max(0, score - half), min(100, score + half)]",     TXT),
 ]
 box(s, 0.85, 1.8, 6.7, 4.15, fill=RGBColor(0x0B, 0x10, 0x1E),
     line=LINE, round_=True)
@@ -297,22 +296,23 @@ for t, c in code:
         text(s, 1.1, y, 6.2, 0.42, t, size=13, font=MONO, color=c,
              sp_after=0)
     y += 0.45
-text(s, 0.9, 6.15, 6.5, 0.5, "backend/ensemble.py", size=13, color=MUT,
+text(s, 0.9, 6.15, 6.5, 0.5, "backend/predictor.py", size=13, color=MUT,
      font=MONO)
 text(s, 8.05, 2.0, 4.5, 4.2, [
-    "Eight models vote, we take the average.",
-    "Their disagreement becomes the band.",
-    "Wide band means slow down and look closer.",
+    "Eight models vote; their average becomes the score.",
+    "Their disagreement sets the band's width.",
+    "A wide band means slow down and look closer.",
 ], size=24, sp_after=22)
 notes(s, "This is the honest part, in the actual code. The eight models vote, "
-         "we take the mean, then we measure how much they disagree. Large "
-         "disagreement becomes a wide band on screen. The app never pretends "
-         "to be sure when it is not.")
+         "their average is calibrated into a probability, and how much they "
+         "disagree sets the width of the band on screen. It is a disagreement "
+         "measure, not a guarantee, and the app never pretends to be sure "
+         "when it is not.")
 
 # ================= 10. THE REPORT CARD =================
 s = slide()
 title(s, "Tested on patients it never saw, the numbers hold.")
-pic(s, SHOT + r"\chart_calibration.png", 0.8, 1.85, 6.3)
+pic(s, str(SHOT / "chart_calibration.png"), 0.8, 1.85, 6.3)
 text(s, 7.55, 2.15, 5.0, 4.3, [
     ("When it said 60%, about 60% failed.", {"size": 25}),
     ("Graded on 5,213 patients it never trained on.", {"size": 25}),
@@ -349,7 +349,7 @@ text(s, 0.85, 1.95, 11.6, 4.9, [
     "ClinicalTrials.gov API v2, US National Library of Medicine.",
     "Evaluation: backend/artifacts/model_metrics.json, test n = 5,213.",
     "Screenshots captured from the running app.",
-], size=20, color=MUT, sp_after=16)
+], size=24, color=MUT, sp_after=16)
 notes(s, "Every number in this deck traces to one of these sources or to the "
          "app's own evaluation artifacts in the repository.")
 
