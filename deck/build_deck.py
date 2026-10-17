@@ -5,15 +5,14 @@ Written for a general audience: no oncology background assumed.
 Slide titles are full sentences; detail lives in speaker notes.
 
 Run:  python deck/build_deck.py
-Deps: pip install python-pptx
+Deps: pip install python-pptx pillow
 """
 
 from pptx import Presentation
-from pptx.util import Inches, Pt, Emu
+from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 from pptx.enum.shapes import MSO_SHAPE
-from pptx.oxml.ns import qn
 from PIL import Image
 from pathlib import Path
 
@@ -25,7 +24,6 @@ TXT    = RGBColor(0xF1, 0xF5, 0xF9)
 MUT    = RGBColor(0x94, 0xA3, 0xB8)
 ACC    = RGBColor(0x3B, 0x82, 0xF6)
 ACCTXT = RGBColor(0x60, 0xA5, 0xFA)
-GOOD   = RGBColor(0x34, 0xD3, 0x99)
 
 UI   = "Segoe UI"
 MONO = "Consolas"

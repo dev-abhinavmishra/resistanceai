@@ -130,10 +130,12 @@ The demo patient button loads a real sequenced case from the worklist
 and twin outcomes); it falls back to the built-in PX-* demos when the
 licensed corpus isn't mounted.
 
-**Presentation deck:** `ResistanceAI_Presentation_v9.pptx` — an 11-slide
-video deck in the app's design system, with current-UI screenshots
-(`docs/screenshots/v9_*.png`) and two behind-the-scenes code slides
-(`predictor.py`, `mechanisms.py`). Rebuild/retweak with
+**Presentation deck:** `ResistanceAI_Presentation_v9.pptx` — a 12-slide
+video deck in the app's design system, written for a lay audience:
+full-sentence titles, speaker notes on every slide, current-UI
+screenshots (`docs/screenshots/v9_*.png`), the real held-out
+calibration chart, and one behind-the-scenes code slide
+(`predictor.py` inference path). Rebuild/retweak with
 `python deck/build_deck.py`.
 
 ## Deploy
