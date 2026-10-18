@@ -1,0 +1,4 @@
+- generic [ref=e3]:
+  - link "Skip to workspace" [ref=e4] [cursor=pointer]:
+    - /url: "#iterra-workspace"
+  - generic [ref=e45]: Loading Timer…

@@ -137,7 +137,7 @@ screenshots (`docs/screenshots/v9_*.png`), a whole-system architecture
 diagram (offline training lane vs live request lane), the real held-out
 calibration chart, two code slides (`predictor.py` inference path, plus
 the readable twin-matching and small-cohort-suppression code), and a
-clickable link to the live demo (`resistanceai.streamlit.app`) on the
+clickable link to the live demo (`theresistanceaiproject.streamlit.app`) on the
 title, product, and closing slides. Rebuild/retweak with
 `python deck/build_deck.py`.
 

@@ -38,7 +38,7 @@ CODEBG = RGBColor(0x06, 0x0C, 0x11)
 UI   = "Georgia"     # serif voice for titles and prose
 MONO = "Consolas"    # monospace for code, numbers, lab tags
 
-DEMO_URL = "https://resistanceai.streamlit.app"
+DEMO_URL = "https://theresistanceaiproject.streamlit.app"
 TOTAL    = 14
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -185,7 +185,7 @@ text(s, 0.78, 5.9, 11.8, 0.5,
      "Abhinav Mishra     Python and Streamlit     trained on free public data",
      size=18, color=MUT)
 linkify(text(s, 0.78, 6.55, 11.8, 0.5,
-             "Open the live demo  ›  resistanceai.streamlit.app",
+             "Open the live demo  ›  theresistanceaiproject.streamlit.app",
              size=18, color=ACCTXT, font=MONO))
 notes(s, "Hi, I'm Abhinav. Doctors who treat cancer face a hard problem: even "
          "with a tumor's DNA report in hand, it is hard to know which drug will "
@@ -304,8 +304,8 @@ text(s, 8.9, 3.1, 3.4, 2.3, [
     "2 mechanisms flagged by name",
 ], size=17, sp_after=12)
 eyebrow(s, 8.55, 5.85, "TRY IT LIVE")
-linkify(text(s, 8.55, 6.3, 4.0, 0.5, "resistanceai.streamlit.app",
-             size=16, color=ACCTXT, font=MONO))
+linkify(text(s, 8.55, 6.3, 4.0, 0.5, "theresistanceaiproject.streamlit.app",
+             size=13, color=ACCTXT, font=MONO))
 notes(s, "Here it is running. I load a real lung cancer patient and the app "
          "scores a 53 percent chance the next treatment fails, places that "
          "patient at the 32nd percentile of everyone on record, and names two "
@@ -664,20 +664,20 @@ text(s, 0.78, 3.3, 11.5, 1.6, [
 text(s, 0.78, 4.9, 11.5, 0.5,
      "26,064 patients  ·  201 signals  ·  8 models  ·  0.78 AUC",
      size=16, color=MUT, font=MONO)
-btn = box(s, 0.78, 5.6, 4.5, 0.85, fill=ACC, round_=True)
+btn = box(s, 0.78, 5.6, 5.4, 0.85, fill=ACC, round_=True)
 btn.click_action.hyperlink.address = DEMO_URL
-btb = text(s, 0.78, 5.6, 4.5, 0.85, [
+btb = text(s, 0.78, 5.6, 5.4, 0.85, [
     ("CLICK TO OPEN", {"size": 10, "color": BTNTXT, "font": MONO,
                        "bold": True}),
-    ("resistanceai.streamlit.app", {"size": 19, "color": BTNTXT,
-                                    "font": MONO, "bold": True}),
+    ("theresistanceaiproject.streamlit.app", {"size": 15, "color": BTNTXT,
+                                              "font": MONO, "bold": True}),
 ], align=PP_ALIGN.CENTER, anchor=MSO_ANCHOR.MIDDLE, sp_after=2)
 btb.click_action.hyperlink.address = DEMO_URL
 notes(s, "That is ResistanceAI. It gives a doctor the kind of read an expert "
          "panel would give, in seconds, with the reasoning left on the "
          "screen. Everything you saw is the running app on real public data, "
          "and the button on screen opens the public demo at "
-         "resistanceai.streamlit.app. Thanks for watching.")
+         "theresistanceaiproject.streamlit.app. Thanks for watching.")
 
 # ================= 14. SOURCES =================
 s = slide()
