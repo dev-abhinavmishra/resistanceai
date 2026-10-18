@@ -39,3 +39,7 @@ backend/artifacts/case_queue.json
 
 # Submission cover asset — kept locally for the app-challenge upload, not in git
 cover_photo_600x800.jpg
+
+# local tooling artifacts
+.playwright-mcp/
+weekstrip.png
